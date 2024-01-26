@@ -15,10 +15,14 @@ class LoadInJSONCallEndpoint {
             if(jsonData.length > 1) {
                 for(let i = 0; i < jsonData.length; i++) {
                     // Data manipulation (like adding an id if needed) would happen here
+                    // this.addIdToJsonElement(jsonData[i], i);
+                    console.log(jsonData[i]);
+
                     this.makePostRequest(jsonData[i]);
                 }
             } else {
                 // Data manipulation (like adding an id if needed) would happen here
+                // this.addIdToJsonElement(jsonData, 0);
                 this.makePostRequest(jsonData);
             }
         } catch (error) {
@@ -32,8 +36,12 @@ class LoadInJSONCallEndpoint {
         // with a fake 'id'
         const apiUrl = 'https://jsonplaceholder.typicode.com/posts'; 
         const axiosResponse = await axios.post(apiUrl, jsonData);
-        console.log('Response:', axiosResponse.data);
+        // console.log('Response:', axiosResponse.data);
         return axiosResponse.data;
+    }
+
+    static addIdToJsonElement(jsonData: { [key: string]: string }, id: number): void {
+        jsonData.id = id.toString();
     }
 }
 

@@ -52,16 +52,19 @@ var LoadInJSONCallEndpoint = /** @class */ (function () {
                         return [4 /*yield*/, fsExtra.readJson(jsonFilePath)];
                     case 1:
                         jsonData = _a.sent();
-                        console.log(jsonData);
+                        // console.log(jsonData);
                         // If the JSON is a list of elements
                         if (jsonData.length > 1) {
                             for (i = 0; i < jsonData.length; i++) {
                                 // Data manipulation (like adding an id if needed) would happen here
+                                this.addIdToJsonElement(jsonData[i], i);
+                                console.log(jsonData[i]);
                                 this.makePostRequest(jsonData[i]);
                             }
                         }
                         else {
                             // Data manipulation (like adding an id if needed) would happen here
+                            this.addIdToJsonElement(jsonData, 0);
                             this.makePostRequest(jsonData);
                         }
                         return [3 /*break*/, 3];
@@ -84,11 +87,14 @@ var LoadInJSONCallEndpoint = /** @class */ (function () {
                         return [4 /*yield*/, axios_1.default.post(apiUrl, jsonData)];
                     case 1:
                         axiosResponse = _a.sent();
-                        console.log('Response:', axiosResponse.data);
+                        // console.log('Response:', axiosResponse.data);
                         return [2 /*return*/, axiosResponse.data];
                 }
             });
         });
+    };
+    LoadInJSONCallEndpoint.addIdToJsonElement = function (jsonData, id) {
+        jsonData.id = id.toString();
     };
     LoadInJSONCallEndpoint.FILE_PREFIX = './src/json/';
     return LoadInJSONCallEndpoint;
