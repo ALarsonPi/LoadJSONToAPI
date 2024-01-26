@@ -13,9 +13,11 @@ class LoadInJSONCallEndpoint {
 
             // If the JSON is a list of elements
             if(jsonData.length > 1) {
-                for(let i = 0; i < jsonData.length; i++) {
+                const startingIndex = 0;
+                const endingIndex = jsonData.length;
+                for(let i = startingIndex; i < endingIndex; i++) {
                     // Data manipulation (like adding an id if needed) would happen here
-                    // this.addIdToJsonElement(jsonData[i], i);
+                    this.addIdToJsonElement(jsonData[i], i);
                     this.changePropertyNamesForJSON(jsonData[i]);
                     console.log(jsonData[i]);
 
@@ -24,6 +26,7 @@ class LoadInJSONCallEndpoint {
             } else {
                 // Data manipulation (like adding an id if needed) would happen here
                 // this.addIdToJsonElement(jsonData, 0);
+                // this.changePropertyNamesForJSON(jsonData[0]);
                 this.makePostRequest(jsonData);
             }
         } catch (error) {

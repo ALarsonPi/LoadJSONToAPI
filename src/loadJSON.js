@@ -48,7 +48,7 @@ var LoadInJSONCallEndpoint = /** @class */ (function () {
                 switch (_a.label) {
                     case 0:
                         _a.trys.push([0, 2, , 3]);
-                        jsonFilePath = this.FILE_PREFIX + 'exampleJson.json';
+                        jsonFilePath = this.FILE_PREFIX + 'scenarios.json';
                         return [4 /*yield*/, fsExtra.readJson(jsonFilePath)];
                     case 1:
                         jsonData = _a.sent();
@@ -57,7 +57,7 @@ var LoadInJSONCallEndpoint = /** @class */ (function () {
                         if (jsonData.length > 1) {
                             for (i = 0; i < jsonData.length; i++) {
                                 // Data manipulation (like adding an id if needed) would happen here
-                                // this.addIdToJsonElement(jsonData[i], i);
+                                this.addIdToJsonElement(jsonData[i], i);
                                 this.changePropertyNamesForJSON(jsonData[i]);
                                 console.log(jsonData[i]);
                                 this.makePostRequest(jsonData[i]);
@@ -99,9 +99,8 @@ var LoadInJSONCallEndpoint = /** @class */ (function () {
     };
     LoadInJSONCallEndpoint.changePropertyNamesForJSON = function (jsonData) {
         var propertyNamesYouWantToChange = [
-            ["originalPropertyName1", "modifiedPropertyName1"],
-            ["originalPropertyName2", "modifiedPropertyName2"],
-            ["originalPropertyName3", "modifiedPropertyName3"]
+            ["id", "scenarioId"],
+            ["section", "scenarioGroup"]
         ];
         this.changePropertyNames(jsonData, propertyNamesYouWantToChange);
     };
