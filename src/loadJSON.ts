@@ -7,7 +7,7 @@ class LoadInJSONCallEndpoint {
     static async loadInJSON() {
         try {
             // Load JSON from a file. Please put json files in 'json' folder
-            const jsonFilePath = this.FILE_PREFIX + 'missions.json';
+            const jsonFilePath = this.FILE_PREFIX + 'exampleJson.json';
             const jsonData = await fsExtra.readJson(jsonFilePath);
             console.log(jsonData);
 
@@ -16,6 +16,7 @@ class LoadInJSONCallEndpoint {
                 for(let i = 0; i < jsonData.length; i++) {
                     // Data manipulation (like adding an id if needed) would happen here
                     // this.addIdToJsonElement(jsonData[i], i);
+                    this.changePropertyNamesForJSON(jsonData[i]);
                     console.log(jsonData[i]);
 
                     this.makePostRequest(jsonData[i]);
@@ -42,6 +43,29 @@ class LoadInJSONCallEndpoint {
 
     static addIdToJsonElement(jsonData: { [key: string]: string }, id: number): void {
         jsonData.id = id.toString();
+    }
+
+    static changePropertyNamesForJSON(jsonData: { [key: string]: string }) {
+        const propertyNamesYouWantToChange = [
+            ["originalPropertyName1", "modifiedPropertyName1"],
+            ["originalPropertyName2", "modifiedPropertyName2"],
+            ["originalPropertyName3", "modifiedPropertyName3"]
+        ];
+        this.changePropertyNames(jsonData, propertyNamesYouWantToChange);
+    }
+
+    static changePropertyNames(jsonData: { [key: string]: string }, propertyNames: string[][]) {
+        propertyNames.forEach(pair => {
+            const [originalName, modifiedName] = pair;
+            if(!jsonData.hasOwnProperty(originalName)) {
+                console.error("JSON data doesn't have an attribute called ", originalName);
+                return;
+            }
+            
+            const data = jsonData[originalName];
+            jsonData[modifiedName] = data;
+            delete jsonData[originalName];
+        });
     }
 }
 

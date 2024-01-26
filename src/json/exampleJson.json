@@ -1,10 +1,12 @@
 [
     {
-        "thing": "thing",
-        "thing2": "thing2"
+        "originalPropertyName1": "thing",
+        "originalPropertyName2": "thing2",
+        "originalPropertyName3": "thing3"
     },
     {
-        "thing3": "thing3",
-        "thing4": "thing4"
+        "originalPropertyName1": "thing3",
+        "originalPropertyName2": "thing4",
+        "originalPropertyName3": "thing5"
     }
 ]
