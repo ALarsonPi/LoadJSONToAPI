@@ -1,0 +1,19 @@
+{
+  "name": "loadinjson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "loadJSON.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc src/loadJSON.ts && node src/loadJSON.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4"
+  }
+}
