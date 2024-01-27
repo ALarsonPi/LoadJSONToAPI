@@ -38,93 +38,83 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var axios_1 = require("axios");
 var fsExtra = require("fs-extra");
+var jsonModifier_1 = require("./jsonModifier");
 var LoadInJSONCallEndpoint = /** @class */ (function () {
     function LoadInJSONCallEndpoint() {
     }
-    LoadInJSONCallEndpoint.loadInJSON = function () {
+    LoadInJSONCallEndpoint.loadInJSONAndCallEndpoint = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var jsonFilePath, jsonData, startingIndex, endingIndex, i, error_1;
+            var jsonFilePath, endpointUrl, idToken, shouldChangePropertyNames, jsonPropertyNameChanges, shouldAddIndexAsId, idName, jsonDataFromFile, jsonList, startingIndex, endingIndex, i, postResponse, error_1;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        _a.trys.push([0, 2, , 3]);
-                        jsonFilePath = this.FILE_PREFIX + 'missions.json';
-                        return [4 /*yield*/, fsExtra.readJson(jsonFilePath)];
+                        jsonFilePath = this.FILE_PREFIX + 'exampleJson.json';
+                        endpointUrl = 'https://actualValue.execute-api.us-east-2.amazonaws.com/prod';
+                        idToken = '';
+                        shouldChangePropertyNames = false;
+                        jsonPropertyNameChanges = [
+                            [],
+                            []
+                        ];
+                        shouldAddIndexAsId = true;
+                        idName = "id";
+                        _a.label = 1;
                     case 1:
-                        jsonData = _a.sent();
-                        console.log(jsonData);
-                        // If the JSON is a list of elements
-                        if (jsonData.length > 1) {
-                            startingIndex = 0;
-                            endingIndex = jsonData.length;
-                            for (i = startingIndex; i < endingIndex; i++) {
-                                // Data manipulation (like adding an id if needed) would happen here
-                                this.addIdToJsonElement(jsonData[i], i);
-                                this.changePropertyNamesForJSON(jsonData[i]);
-                                console.log(jsonData[i]);
-                                this.makePostRequest(jsonData[i]);
-                            }
-                        }
-                        else {
-                            // Data manipulation (like adding an id if needed) would happen here
-                            this.addIdToJsonElement(jsonData, 0);
-                            this.changePropertyNamesForJSON(jsonData[0]);
-                            this.makePostRequest(jsonData);
-                        }
-                        return [3 /*break*/, 3];
+                        _a.trys.push([1, 7, , 8]);
+                        return [4 /*yield*/, fsExtra.readJson(jsonFilePath)];
                     case 2:
+                        jsonDataFromFile = _a.sent();
+                        jsonList = (jsonDataFromFile.length === 1) ? [jsonDataFromFile] : jsonDataFromFile;
+                        startingIndex = 0;
+                        endingIndex = jsonList.length;
+                        i = startingIndex;
+                        _a.label = 3;
+                    case 3:
+                        if (!(i < endingIndex)) return [3 /*break*/, 6];
+                        if (shouldChangePropertyNames) {
+                            jsonModifier_1.JSONModifier.changePropertyNames(jsonList[i], jsonPropertyNameChanges);
+                        }
+                        if (shouldAddIndexAsId) {
+                            jsonModifier_1.JSONModifier.addIdToJsonElement(jsonList[i], i, idName);
+                        }
+                        return [4 /*yield*/, this.makePostRequest(jsonList[i], endpointUrl, idToken)];
+                    case 4:
+                        postResponse = _a.sent();
+                        console.log(postResponse);
+                        _a.label = 5;
+                    case 5:
+                        i++;
+                        return [3 /*break*/, 3];
+                    case 6: return [3 /*break*/, 8];
+                    case 7:
                         error_1 = _a.sent();
                         console.log(error_1);
-                        return [3 /*break*/, 3];
-                    case 3: return [2 /*return*/];
+                        return [3 /*break*/, 8];
+                    case 8: return [2 /*return*/];
                 }
             });
         });
     };
-    LoadInJSONCallEndpoint.makePostRequest = function (jsonData) {
+    LoadInJSONCallEndpoint.makePostRequest = function (jsonData, endpointUrl, idToken) {
         return __awaiter(this, void 0, void 0, function () {
-            var apiUrl, idToken, axiosResponse;
+            var dummyApiUrl, dummyAxiosResponse, axiosResponse;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        apiUrl = 'https://3b8q7d9jd4.execute-api.us-east-2.amazonaws.com/prod/missions';
-                        idToken = "eyJraWQiOiJDZmwyT0tERCs0VHBcL05jcGJvMWxNcGNsRnhOM0RpWTh5MXFaZjhrQmE2TT0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoib1NwOGlNYnE5YmJQQU1hVjhFWnZTdyIsImN1c3RvbTpsZHNhY2NvdW50aWQiOiIzNjE4NTA2OTIzNDYxNzc3Iiwic3ViIjoiYzk2ZjBiZGEtYjk3Zi00NzE2LTgxODItNTIyNmQwZjI5Y2EwIiwiY29nbml0bzpncm91cHMiOlsidXMtd2VzdC0yX2Y0SFp2RHpwal9DaHVyY2gtQWNjb3VudC1PcGVuSUQiLCJ0YWxsLWFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMi5hbWF6b25hd3MuY29tXC91cy13ZXN0LTJfZjRIWnZEenBqIiwiY29nbml0bzp1c2VybmFtZSI6ImNodXJjaC1hY2NvdW50LW9wZW5pZF8wMHUxd3hkZ2tvcG5keHUxYzM1NyIsImdpdmVuX25hbWUiOiJBbGVjIFJpY2hhcmQiLCJub25jZSI6ImN4Z0R5eFBOU0hOaU1aZGRFRzZsRFF6OTlnT1BGWE5BUGZmZW92YlhLVDNWS2ZQMnBkaU0yM3AtX3B5TXVmZDFQSWFldVRqMjVSREswUGtxMmhvQ2JiZVF4MV9lRzlNT29uanpuRXlDdEZRczBXaHh6cEFTTi1URE9VeVRfN0ZtOFFUNFBKdzBnM2tsWWg2S2hkdmlYNGwzQlBKQjc1RDhTeDdEUFcxcVRQZyIsImF1ZCI6IjczZTJ0ZGphNWhpZHZkMnY5MWJwZmFsaG9wIiwiaWRlbnRpdGllcyI6W3sidXNlcklkIjoiMDB1MXd4ZGdrb3BORHhVMUMzNTciLCJwcm92aWRlck5hbWUiOiJDaHVyY2gtQWNjb3VudC1PcGVuSUQiLCJwcm92aWRlclR5cGUiOiJPSURDIiwiaXNzdWVyIjpudWxsLCJwcmltYXJ5IjoidHJ1ZSIsImRhdGVDcmVhdGVkIjoiMTY3Mzk3MTE0MDAxMCJ9XSwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MDYzMDUwNDEsImV4cCI6MTcwNjMwODY0MSwiaWF0IjoxNzA2MzA1MDQxLCJmYW1pbHlfbmFtZSI6IkxhcnNvbiIsImVtYWlsIjoiYWxhcnNvbnBpQGdtYWlsLmNvbSJ9.JP4nrEjQmrOd9CxpOH_pl-E_Bhn83V37NgQ7NMkgALtRHkatAHDsfNBS8pKWMrLv_jzSDl8YA9UMdHCoNgWpeu9R2CFNEZXL65oo53yUvalQzyhquZkvPAvKLP0ZGU3eZphjP5WZy4pfDTemI26Av2v4tMWQXZPCfSk4yvMEbVjxEwu-PDY1WC1FNkivkLRGFyFEou4vN337UjtX4sScg8txS5agibe8Rv4OBKR8SW0-kP5OOA2_oJqHrl8GGXbqLZ0h-_ru_WoqD-2hE4EcxVBZ9yDDDfBvYpPlcaDMTdv-ISfIjDK7CztCpkJj_KPE57xkiV2ctjFDyUs-E3AsMw";
-                        return [4 /*yield*/, axios_1.default.post(apiUrl, jsonData, {
-                                headers: {
-                                    'Content-Type': 'application/json',
-                                    'Id': "".concat(idToken)
-                                }
-                            })];
+                        console.log("Sending", jsonData);
+                        dummyApiUrl = 'https://jsonplaceholder.typicode.com/posts';
+                        return [4 /*yield*/, axios_1.default.post(dummyApiUrl, jsonData)];
                     case 1:
+                        dummyAxiosResponse = _a.sent();
+                        return [2 /*return*/, dummyAxiosResponse.data];
+                    case 2:
                         axiosResponse = _a.sent();
-                        // console.log('Response:', axiosResponse.data);
                         return [2 /*return*/, axiosResponse.data];
                 }
             });
         });
     };
-    LoadInJSONCallEndpoint.addIdToJsonElement = function (jsonData, id) {
-        jsonData.id = id.toString();
-    };
-    LoadInJSONCallEndpoint.changePropertyNamesForJSON = function (jsonData) {
-        var propertyNamesYouWantToChange = [
-            ["id", "missionId"]
-        ];
-        this.changePropertyNames(jsonData, propertyNamesYouWantToChange);
-    };
-    LoadInJSONCallEndpoint.changePropertyNames = function (jsonData, propertyNames) {
-        propertyNames.forEach(function (pair) {
-            var originalName = pair[0], modifiedName = pair[1];
-            if (!jsonData.hasOwnProperty(originalName)) {
-                console.error("JSON data doesn't have an attribute called ", originalName);
-                return;
-            }
-            var data = jsonData[originalName];
-            jsonData[modifiedName] = data;
-            delete jsonData[originalName];
-        });
-    };
     LoadInJSONCallEndpoint.FILE_PREFIX = './src/json/';
     return LoadInJSONCallEndpoint;
 }());
-LoadInJSONCallEndpoint.loadInJSON();
+LoadInJSONCallEndpoint.loadInJSONAndCallEndpoint();
