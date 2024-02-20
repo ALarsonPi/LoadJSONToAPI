@@ -35,7 +35,7 @@ class LoadInJSONCallEndpoint {
             the id will be set as the index of the loop. The id will be a string and will be named
             [idName]
         */
-        const shouldAddIndexAsId = true;
+        const shouldAddIndexAsId = false;
         const idName = "id";
 
         try {
