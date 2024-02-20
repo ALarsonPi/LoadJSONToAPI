@@ -1,6 +1,6 @@
 export class JSONModifier {
-    static addIdToJsonElement(jsonData: { [key: string]: string }, id: number, idName: string): void {
-        jsonData[idName] = id.toString();
+    static addIdToJsonElement(jsonData: { [key: string]: string|number }, id: number, idName: string, shouldBeString: boolean): void {
+        jsonData[idName] = (shouldBeString) ? id.toString() : id;
     }
 
     static changePropertyNames(jsonData: { [key: string]: string }, propertyNames: string[][]) {

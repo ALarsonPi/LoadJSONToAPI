@@ -36,6 +36,7 @@ class LoadInJSONCallEndpoint {
             [idName]
         */
         const shouldAddIndexAsId = false;
+        const indexShouldBeString = true;
         const idName = "id";
 
         try {
@@ -49,7 +50,7 @@ class LoadInJSONCallEndpoint {
                     JSONModifier.changePropertyNames(jsonList[i], jsonPropertyNameChanges);
                 }
                 if(shouldAddIndexAsId) {
-                    JSONModifier.addIdToJsonElement(jsonList[i], i, idName);
+                    JSONModifier.addIdToJsonElement(jsonList[i], i, idName, indexShouldBeString);
                 }
 
                 const postResponse = await this.makePostRequest(jsonList[i], endpointUrl, idToken);
