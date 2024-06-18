@@ -19,7 +19,7 @@ class LsaGetLocalization {
 
         const searchLocalizationId = '';
         const searchSortIndex = '';
-        const searchEnglishText = '';
+        const searchEnglishText = 'You are here';
         this.searchAndPrintLocalizations(localizations, searchLocalizationId, searchSortIndex, searchEnglishText);
 
         console.log("Localizations found ", localizations.length);
@@ -63,7 +63,14 @@ class LsaGetLocalization {
     }
 
     private static getFirstLocalizationWhereEnglishTextIncludes(localizations: LsaLocalization[], englishText: string): LsaLocalization | undefined {
-        return localizations.find(localization => localization.en_US.includes(englishText));
+        const textToCompare = englishText.toLowerCase();
+        for(let i= 0; i < localizations.length; i++) {
+            const text = localizations[i].en_US.toLowerCase();
+            if(text === textToCompare || text.includes(textToCompare)) {
+                return localizations[i];
+            }
+        }
+        return undefined;
     }
 
     static async makeGetRequest(endpointUrl: string, bearerAccessToken: string): Promise<LsaLocalization[]> {

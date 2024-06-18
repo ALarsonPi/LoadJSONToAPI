@@ -57,7 +57,7 @@ var LsaGetLocalization = /** @class */ (function () {
                         localizations = _a.sent();
                         searchLocalizationId = '';
                         searchSortIndex = '';
-                        searchEnglishText = '';
+                        searchEnglishText = 'You are here';
                         this.searchAndPrintLocalizations(localizations, searchLocalizationId, searchSortIndex, searchEnglishText);
                         console.log("Localizations found ", localizations.length);
                         console.log("Max sort index ", this.getMaxSortIndex(localizations));
@@ -99,7 +99,14 @@ var LsaGetLocalization = /** @class */ (function () {
         return localizations.find(function (localization) { return localization.sortIndex === sortIndex; });
     };
     LsaGetLocalization.getFirstLocalizationWhereEnglishTextIncludes = function (localizations, englishText) {
-        return localizations.find(function (localization) { return localization.en_US.includes(englishText); });
+        var textToCompare = englishText.toLowerCase();
+        for (var i = 0; i < localizations.length; i++) {
+            var text = localizations[i].en_US.toLowerCase();
+            if (text === textToCompare || text.includes(textToCompare)) {
+                return localizations[i];
+            }
+        }
+        return undefined;
     };
     LsaGetLocalization.makeGetRequest = function (endpointUrl, bearerAccessToken) {
         return __awaiter(this, void 0, void 0, function () {

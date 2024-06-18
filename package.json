@@ -9,7 +9,7 @@
     "send-lsa": "tsc src/lsa-code/LSA-Send-Localization.ts && node src/lsa-code/LSA-Send-Localization.js",
     "get-lsa": "tsc src/lsa-code/LSA-Get-Localization.ts && node src/lsa-code/LSA-Get-Localization.js",
     "list-tables": "aws dynamodb list-tables --profile mtclang-dev",
-    "scan-localization-table": "aws dynamodb scan --profile mtclang-prod --table-name LSA_LOCALIZATION --filter-expression \"sortIndex = :value\" --expression-attribute-values \"{\\\":value\\\":{\\\"S\\\":\\\"248\\\"}}\""
+    "scan-localization-table": "aws dynamodb scan --profile mtclang-prod --table-name LSA_LOCALIZATION --filter-expression \"sortIndex = :value\" --expression-attribute-values \"{\\\":value\\\":{\\\"S\\\":\\\"262\\\"}}\""
   },
   "author": "",
   "license": "ISC",
