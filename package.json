@@ -6,10 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc src/loadJSON.ts && node src/loadJSON.js",
-    "send-lsa": "tsc src/LSA-Send-Localization.ts && node src/LSA-Send-Localization.js",
-    "get-lsa": "tsc src/LSA-Get-Localization.ts && node src/LSA-Get-Localization.js",
+    "send-lsa": "tsc src/lsa-code/LSA-Send-Localization.ts && node src/lsa-code/LSA-Send-Localization.js",
+    "get-lsa": "tsc src/lsa-code/LSA-Get-Localization.ts && node src/lsa-code/LSA-Get-Localization.js",
     "list-tables": "aws dynamodb list-tables --profile mtclang-dev",
-    "scan-localization-table": "aws dynamodb scan --profile mtclang-dev --table-name LSA_LOCALIZATION --filter-expression \"sortIndex = :value\" --expression-attribute-values \"{\\\":value\\\":{\\\"S\\\":\\\"175\\\"}}\""
+    "scan-localization-table": "aws dynamodb scan --profile mtclang-dev --table-name LSA_LOCALIZATION --filter-expression \"sortIndex = :value\" --expression-attribute-values \"{\\\":value\\\":{\\\"S\\\":\\\"174\\\"}}\""
   },
   "author": "",
   "license": "ISC",

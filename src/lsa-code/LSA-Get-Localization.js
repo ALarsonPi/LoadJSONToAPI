@@ -37,44 +37,48 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var axios_1 = require("axios");
+var LsaService_1 = require("./LsaService");
 var LsaGetLocalization = /** @class */ (function () {
     function LsaGetLocalization() {
     }
     LsaGetLocalization.getLocalizations = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var DEV_HOST, PROD_HOST, findAllEndpointUrl, updateAllEndpointUrl, accessToken, localizations, desiredLocalizationId, desiredSortIndex, desiredEnglishText, localization, localization, localization;
+            var isProd, endpoint, lsaService, accessToken, fullUrl, localizations, searchLocalizationId, searchSortIndex, searchEnglishText;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        DEV_HOST = 'https://api.test.lang.mtc.byu.edu/lsa/v1';
-                        PROD_HOST = 'https://api.lang.mtc.byu.edu/lsa/v1';
-                        findAllEndpointUrl = DEV_HOST + '/localization/item/findAll';
-                        updateAllEndpointUrl = DEV_HOST + '/localization/item/updateAll';
-                        accessToken = "eyJraWQiOiJhNVwvem0zZ1pJSVVjeFZybWhKU0dvWFE3UlNTU1JoNE9wOGd5b3pHa1JwND0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI5NTc2MDgwZC1kZmJmLTRmNDYtYTY2OC1jMjQ2ZDc1NzkzOTIiLCJjb2duaXRvOmdyb3VwcyI6WyJ1cy13ZXN0LTJfQ3N5QmwxV0NoX0NodXJjaC1BY2NvdW50LU9wZW5JRCJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtd2VzdC0yLmFtYXpvbmF3cy5jb21cL3VzLXdlc3QtMl9Dc3lCbDFXQ2giLCJ2ZXJzaW9uIjoyLCJjbGllbnRfaWQiOiIyOTFnc21nazc0b2g1cjRyZW5yaDBuYm4zNiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUiLCJhdXRoX3RpbWUiOjE3MTg2Njg5NDcsImV4cCI6MTcxODczMTUyMywiaWF0IjoxNzE4NzI3OTIzLCJqdGkiOiJjZGUyZmNiMy0yNTU5LTQ2YzQtOThhYS1kZjgzMmNjMTNiYWQiLCJ1c2VybmFtZSI6ImNodXJjaC1hY2NvdW50LW9wZW5pZF8wMHUxd3hkZ2tvcG5keHUxYzM1NyJ9.wDk3fQJa-_nO9of5Xui-XQZudFgb9pXNi1zvXTTPmdsRvF78aZtfFSA4nkHtvXsmqrEjben5z8EtK7FV_BHwqjERuoKvLXP1Vg0Lr07Ps13k9mKBPccMGJxBXkr4ZO7eijOReEpSlvFIjRqf3FP6S_4HQNrv54JO1sfAzPuKf3jQT_kJs_LeTj1BlfdfTSNpCDNq0NM0n3s1ra7_vZM5lC44Tq2VL_3YvMnpxH-Q1dvuu_MuaISXbuT2p8ZZj_rYkfn91_OvNzGGwflSJdhRhDxbw--EAeKi53RGnr1HK84L8rIFNaZycyDfn3E4bx89zO0azPSFYHkZ8nxkLWch1A";
-                        return [4 /*yield*/, this.makeGetRequest(findAllEndpointUrl, accessToken)];
+                        isProd = true;
+                        endpoint = 'findAll';
+                        lsaService = new LsaService_1.LsaService(isProd);
+                        accessToken = lsaService.getAccessToken();
+                        fullUrl = lsaService.getFullUrl(endpoint);
+                        return [4 /*yield*/, this.makeGetRequest(fullUrl, accessToken)];
                     case 1:
                         localizations = _a.sent();
-                        desiredLocalizationId = '';
-                        desiredSortIndex = '';
-                        desiredEnglishText = 'Yes, include';
-                        if (localizations.length > 0) {
-                            if (desiredLocalizationId) {
-                                localization = this.getLocalizationById(localizations, desiredLocalizationId);
-                                console.log("Localization Id Search found:", localization);
-                            }
-                            if (desiredSortIndex) {
-                                localization = this.getLocalizationBySortIndex(localizations, desiredSortIndex);
-                                console.log("Sort Index Search found:", localization);
-                            }
-                            if (desiredEnglishText) {
-                                localization = this.getFirstLocalizationWhereEnglishTextIncludes(localizations, desiredEnglishText);
-                                console.log("English Text Search found:", localization);
-                            }
-                        }
+                        searchLocalizationId = '';
+                        searchSortIndex = '';
+                        searchEnglishText = 'Typically, ';
+                        this.searchAndPrintLocalizations(localizations, searchLocalizationId, searchSortIndex, searchEnglishText);
                         return [2 /*return*/];
                 }
             });
         });
+    };
+    LsaGetLocalization.searchAndPrintLocalizations = function (localizations, searchLocalizationId, searchSortIndex, searchEnglishText) {
+        if (localizations.length > 0) {
+            if (searchLocalizationId) {
+                var localization = this.getLocalizationById(localizations, searchLocalizationId);
+                console.log("Localization Id Search found:", localization);
+            }
+            if (searchSortIndex) {
+                var localization = this.getLocalizationBySortIndex(localizations, searchSortIndex);
+                console.log("Sort Index Search found:", localization);
+            }
+            if (searchEnglishText) {
+                var localization = this.getFirstLocalizationWhereEnglishTextIncludes(localizations, searchEnglishText);
+                console.log("English Text Search found:", localization);
+            }
+        }
     };
     LsaGetLocalization.getLocalizationById = function (localizations, id) {
         return localizations.find(function (localization) { return localization.localizationId === id; });
@@ -103,7 +107,6 @@ var LsaGetLocalization = /** @class */ (function () {
             });
         });
     };
-    LsaGetLocalization.FILE_PREFIX = './src/json/';
     return LsaGetLocalization;
 }());
 LsaGetLocalization.getLocalizations();
