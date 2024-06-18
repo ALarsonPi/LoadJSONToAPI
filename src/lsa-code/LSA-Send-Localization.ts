@@ -8,7 +8,7 @@ class LsaSendLocalizations {
 
     static async loadInJSONAndCallEndpoint() {
         // Set these properties
-        const jsonFilePath = this.FILE_PREFIX + '/JSON_FILE_NAME.json'; // /json/lsa/YOUR_FILE
+        const jsonFilePath = this.FILE_PREFIX + '/update-localizations.json'; // /json/lsa/YOUR_FILE
         const isProd = false;
         const endpoint = 'save'; // Options: 'update' / 'save'
 

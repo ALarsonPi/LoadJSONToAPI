@@ -57,12 +57,24 @@ var LsaGetLocalization = /** @class */ (function () {
                         localizations = _a.sent();
                         searchLocalizationId = '';
                         searchSortIndex = '';
-                        searchEnglishText = 'Typically, ';
+                        searchEnglishText = '';
                         this.searchAndPrintLocalizations(localizations, searchLocalizationId, searchSortIndex, searchEnglishText);
+                        console.log("Localizations found ", localizations.length);
+                        console.log("Max sort index ", this.getMaxSortIndex(localizations));
                         return [2 /*return*/];
                 }
             });
         });
+    };
+    LsaGetLocalization.getMaxSortIndex = function (localizations) {
+        var max = 0;
+        for (var i = 0; i < localizations.length; i++) {
+            var currentSortIndex = Number(localizations[i].sortIndex);
+            if (currentSortIndex > max) {
+                max = currentSortIndex;
+            }
+        }
+        return max;
     };
     LsaGetLocalization.searchAndPrintLocalizations = function (localizations, searchLocalizationId, searchSortIndex, searchEnglishText) {
         if (localizations.length > 0) {

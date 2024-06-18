@@ -19,8 +19,22 @@ class LsaGetLocalization {
 
         const searchLocalizationId = '';
         const searchSortIndex = '';
-        const searchEnglishText = 'Typically, ';
+        const searchEnglishText = '';
         this.searchAndPrintLocalizations(localizations, searchLocalizationId, searchSortIndex, searchEnglishText);
+
+        console.log("Localizations found ", localizations.length);
+        console.log("Max sort index ", this.getMaxSortIndex(localizations));
+    }
+
+    private static getMaxSortIndex(localizations: LsaLocalization[]) {
+        let max = 0;
+        for(let i = 0; i < localizations.length; i++) {
+            const currentSortIndex = Number(localizations[i].sortIndex);
+            if(currentSortIndex > max) {
+                max = currentSortIndex;
+            }
+        }
+        return max;
     }
 
     private static searchAndPrintLocalizations(localizations: LsaLocalization[], searchLocalizationId: string, searchSortIndex: string, searchEnglishText: string) {

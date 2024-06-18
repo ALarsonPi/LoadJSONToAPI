@@ -10,8 +10,8 @@ export class LsaService {
         Scroll down until you find 'Authorization'
         Copy entire 'access-token' after the word Bearer) 
     */
-    PROD_ACCESS_TOKEN = "";
     DEV_ACCESS_TOKEN = "";
+    PROD_ACCESS_TOKEN = "";
 
     DEV_HOST_URL = 'https://api.test.lang.mtc.byu.edu/lsa/v1';
     PROD_HOST_URL = 'https://api.lang.mtc.byu.edu/lsa/v1';
