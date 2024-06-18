@@ -1,0 +1,25 @@
+[
+    {
+        "lvl": "0",
+        "localizationId": "7dfa01ef-9a3f-41d4-9be2-85a4a78ef3da",
+        "en_US": "HELLO.",
+        "es_ES": "Hola!",
+        "sortIndex": "402",
+        "sm_ES": "Afio mai i le tusi talosaga.",
+        "ceb_PH": "Maayong pag-abot sa aplikasyon.",
+        "pt_PT": "Bem-vindo ao aplicativo.",
+        "it_IT": "Benvenuto nell'applicazione.",
+        "ko_KR": "응용 프로그램에 오신 것을 환영합니다.",
+        "canDo": 0,
+        "tl_PH": "Maligayang pagdating sa aplikasyon.",
+        "isItem": 0,
+        "to_TO": "Mālō e lava mai ki he polokalama.",
+        "ja_JP": "アプリケーションへようこそ。",
+        "cmn_TW": "歡迎使用這個應用程式。",
+        "gil_KI": "Ko riai bwa koaua te kaburoro.",
+        "fr_FR": "Bienvenue dans l'application.",
+        "de_DE": "Willkommen in der Anwendung.",
+        "sm_WS": "Afio mai i le talosaga.",
+        "ru_RU": "Добро пожаловать в приложение."
+    }
+]

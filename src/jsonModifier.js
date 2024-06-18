@@ -4,8 +4,8 @@ exports.JSONModifier = void 0;
 var JSONModifier = /** @class */ (function () {
     function JSONModifier() {
     }
-    JSONModifier.addIdToJsonElement = function (jsonData, id, idName) {
-        jsonData[idName] = id.toString();
+    JSONModifier.addIdToJsonElement = function (jsonData, id, idName, shouldBeString) {
+        jsonData[idName] = (shouldBeString) ? id.toString() : id;
     };
     JSONModifier.changePropertyNames = function (jsonData, propertyNames) {
         propertyNames.forEach(function (pair) {
