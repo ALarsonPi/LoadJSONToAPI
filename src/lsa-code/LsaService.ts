@@ -16,8 +16,12 @@ export class LsaService {
     DEV_HOST_URL = 'https://api.test.lang.mtc.byu.edu/lsa/v1';
     PROD_HOST_URL = 'https://api.lang.mtc.byu.edu/lsa/v1';
 
-    DEV_JSON_FILE_PATH = "src/json/lsa/dev/dev-localizations.json";
-    PROD_JSON_FILE_PATH = "src/json/lsa/prod/prod-localizations.json";
+    DEV_WRITE_FILE_PATH = "src/json/lsa/dev/dev-localizations.json";
+    PROD_WRITE_FILE_PATH = "src/json/lsa/prod/prod-localizations.json";
+    
+    DEV_READ_FILE_PATH = 'src/json/lsa/dev/dev-to-update.json';
+    PROD_READ_FILE_PATH = 'src/json/lsa/dev/prod-to-update.json';
+
 
     constructor(isProd: boolean) {
         this.setIsProd(isProd);
@@ -32,8 +36,12 @@ export class LsaService {
         return hostUrl + '/localization/item/' + endpoint;
     }
 
-    getJsonFilePath(): string {
-        return this.isProd ? this.PROD_JSON_FILE_PATH : this.DEV_JSON_FILE_PATH;
+    getWriteJsonFilePath(): string {
+        return this.isProd ? this.PROD_WRITE_FILE_PATH : this.DEV_WRITE_FILE_PATH;
+    }
+
+    getReadJsonFilePath(): string {
+        return this.isProd ? this.PROD_READ_FILE_PATH : this.DEV_READ_FILE_PATH;
     }
 
     setIsProd(isProd: boolean) {

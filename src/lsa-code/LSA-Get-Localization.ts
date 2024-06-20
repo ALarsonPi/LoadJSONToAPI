@@ -29,9 +29,9 @@ class LsaGetLocalization {
 
 
         /*
-            To print results to a JSON file
+            To write results to a JSON file
         */
-        const filePath = lsaService.getJsonFilePath();
+        const filePath = lsaService.getWriteJsonFilePath();
         this.writeLocalizationsToFile(localizations, filePath);
 
         /* 

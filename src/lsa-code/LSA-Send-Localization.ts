@@ -4,16 +4,15 @@ import { LsaLocalization } from './LsaLocalization';
 import { LsaService } from './LsaService';
 
 class LsaSendLocalizations {
-    static FILE_PREFIX = './src/json/lsa';
 
     static async loadInJSONAndCallEndpoint() {
         // Set these properties
-        const jsonFilePath = this.FILE_PREFIX + '/YOUR_FILE.json'; // /json/lsa/YOUR_FILE
         const isProd = false;
         const endpoint = 'update'; // Options: 'update' / 'save'
 
         const lsaService = new LsaService(isProd);
-        const localizations: LsaLocalization[] = await this.getLocalizationListFromJson(jsonFilePath);
+        const jsonReadFilePath = lsaService.getReadJsonFilePath();
+        const localizations: LsaLocalization[] = await this.getLocalizationListFromJson(jsonReadFilePath);
 
         /* 
             See instructions on how to set accessToken in LSA Service

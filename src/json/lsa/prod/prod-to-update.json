@@ -1,3 +1,25 @@
 [
-    
+    {
+        "localizationId": "6010334e-0b17-43e6-8ba0-0d7c71262d01",
+        "en_US": "On average, how many hours a week do you study [selected language here]?",
+        "es_ES": "En promedio, ¿cuántos días a la semana estudia [selected language here]?",
+        "pt_PT": "Em média, quantas horas por semana você estuda [selected language here]?",
+        "fr_FR": "En moyenne, combien d’heures par semaine étudiez-vous [selected language here]?",
+        "sm_WS": "I le averesi, e fia itula o le vaiaso e te suesueina ai le [selected language here]?",
+        "gil_KI": "Ni ikotana, iraua te aoa n te wiiki ae ko kamatebwai iai [selected language here]?",
+        "to_TO": "ʻI he fakaʻavalisí, ko e houa ʻe fiha ʻi he uike ʻokú ke ako aí [selected language here]?",
+        "isItem": false,
+        "canDo": false,
+        "lvl": "0",
+        "sortIndex": "248",
+        "sm_ES": null,
+        "tl_PH": "Ilang oras sa isang linggo ang karaniwang inilalaan mo sa pag-aaral ng [selected language here]?",
+        "ceb_PH": "Sa kasagaran, pila ka oras matag semana ka magtuon sa [selected language here]?",
+        "it_IT": "Quante ore alla settimana, in media, studi [selected language here]?",
+        "ja_JP": "平均して，[selected language here]を勉強する時間は週に何時間取りますか。",
+        "ko_KR": "평균적으로 매주 몇 시간 동안 [selected language here] 공부를 하십니까?",
+        "cmn_TW": "平均而言，你每週要研讀多少小時的 [selected language here]？",
+        "de_DE": "Wie viele Stunden verwenden Sie durchschnittlich jede Woche dafür, sich eingehend mit [selected language here] zu befassen?",
+        "ru_RU": null
+    }
 ]
