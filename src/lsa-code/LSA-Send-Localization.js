@@ -48,9 +48,9 @@ var LsaSendLocalizations = /** @class */ (function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        jsonFilePath = this.FILE_PREFIX + '/update-localizations.json';
+                        jsonFilePath = this.FILE_PREFIX + '/new-values.json';
                         isProd = true;
-                        endpoint = 'save';
+                        endpoint = 'update';
                         lsaService = new LsaService_1.LsaService(isProd);
                         return [4 /*yield*/, this.getLocalizationListFromJson(jsonFilePath)];
                     case 1:

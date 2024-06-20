@@ -38,29 +38,53 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var axios_1 = require("axios");
 var LsaService_1 = require("./LsaService");
+var fs = require("fs");
 var LsaGetLocalization = /** @class */ (function () {
     function LsaGetLocalization() {
     }
     LsaGetLocalization.getLocalizations = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var isProd, endpoint, lsaService, accessToken, fullUrl, localizations, searchLocalizationId, searchSortIndex, searchEnglishText;
+            var isProd, endpoint, lsaService, accessToken, fullUrl, localizations, filePath;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        isProd = true;
-                        endpoint = 'findAll';
+                        isProd = false;
+                        endpoint = 'updateAll';
                         lsaService = new LsaService_1.LsaService(isProd);
                         accessToken = lsaService.getAccessToken();
                         fullUrl = lsaService.getFullUrl(endpoint);
                         return [4 /*yield*/, this.makeGetRequest(fullUrl, accessToken)];
                     case 1:
                         localizations = _a.sent();
-                        searchLocalizationId = '';
-                        searchSortIndex = '';
-                        searchEnglishText = 'You are here';
-                        this.searchAndPrintLocalizations(localizations, searchLocalizationId, searchSortIndex, searchEnglishText);
+                        filePath = lsaService.getJsonFilePath();
+                        this.writeLocalizationsToFile(localizations, filePath);
+                        /*
+                            Helpful Statistics
+                        */
                         console.log("Localizations found ", localizations.length);
                         console.log("Max sort index ", this.getMaxSortIndex(localizations));
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    LsaGetLocalization.writeLocalizationsToFile = function (localizations, filePath) {
+        return __awaiter(this, void 0, void 0, function () {
+            var jsonArray;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        jsonArray = JSON.stringify(localizations, null, 2);
+                        return [4 /*yield*/, fs.writeFile(filePath, jsonArray, 'utf8', function (err) {
+                                if (err) {
+                                    console.error("Error writing to file ".concat(filePath, ":"), err);
+                                }
+                                else {
+                                    console.log("Successfully wrote to file ".concat(filePath));
+                                }
+                            })];
+                    case 1:
+                        _a.sent();
                         return [2 /*return*/];
                 }
             });
@@ -76,7 +100,7 @@ var LsaGetLocalization = /** @class */ (function () {
         }
         return max;
     };
-    LsaGetLocalization.searchAndPrintLocalizations = function (localizations, searchLocalizationId, searchSortIndex, searchEnglishText) {
+    LsaGetLocalization.searchAndPrintLocalizations = function (localizations, searchLocalizationId, searchSortIndex, searchEnglishText, exactMatch) {
         if (localizations.length > 0) {
             if (searchLocalizationId) {
                 var localization = this.getLocalizationById(localizations, searchLocalizationId);
@@ -87,7 +111,13 @@ var LsaGetLocalization = /** @class */ (function () {
                 console.log("Sort Index Search found:", localization);
             }
             if (searchEnglishText) {
-                var localization = this.getFirstLocalizationWhereEnglishTextIncludes(localizations, searchEnglishText);
+                var localization = void 0;
+                if (exactMatch) {
+                    localization = this.getExactMatchForEnglishText(localizations, searchEnglishText);
+                }
+                else {
+                    localization = this.getFirstLocalizationWhereEnglishTextIncludes(localizations, searchEnglishText);
+                }
                 console.log("English Text Search found:", localization);
             }
         }
@@ -98,11 +128,14 @@ var LsaGetLocalization = /** @class */ (function () {
     LsaGetLocalization.getLocalizationBySortIndex = function (localizations, sortIndex) {
         return localizations.find(function (localization) { return localization.sortIndex === sortIndex; });
     };
+    LsaGetLocalization.getExactMatchForEnglishText = function (localizations, englishText) {
+        return localizations.find(function (localization) { return localization.en_US.toLowerCase() === englishText.toLowerCase(); });
+    };
     LsaGetLocalization.getFirstLocalizationWhereEnglishTextIncludes = function (localizations, englishText) {
         var textToCompare = englishText.toLowerCase();
         for (var i = 0; i < localizations.length; i++) {
             var text = localizations[i].en_US.toLowerCase();
-            if (text === textToCompare || text.includes(textToCompare)) {
+            if (text.includes(textToCompare)) {
                 return localizations[i];
             }
         }
