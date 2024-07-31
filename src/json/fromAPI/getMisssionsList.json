@@ -1,0 +1,1798 @@
+[
+  {
+    "name": "Adriatic North",
+    "missionId": "0"
+  },
+  {
+    "name": "Adriatic South",
+    "missionId": "1"
+  },
+  {
+    "name": "Alabama Birmingham",
+    "missionId": "2"
+  },
+  {
+    "name": "Alaska Anchorage",
+    "missionId": "3"
+  },
+  {
+    "name": "Alpine German-Speaking",
+    "missionId": "4"
+  },
+  {
+    "name": "Angola Luanda",
+    "missionId": "5"
+  },
+  {
+    "name": "Argentina Bahía Blanca",
+    "missionId": "6"
+  },
+  {
+    "name": "Argentina Buenos Aires East",
+    "missionId": "7"
+  },
+  {
+    "name": "Argentina Buenos Aires North",
+    "missionId": "8"
+  },
+  {
+    "name": "Argentina Buenos Aires South",
+    "missionId": "9"
+  },
+  {
+    "name": "Argentina Buenos Aires West",
+    "missionId": "10"
+  },
+  {
+    "name": "Argentina Comodoro Rivadavia",
+    "missionId": "11"
+  },
+  {
+    "name": "Argentina Córdoba",
+    "missionId": "12"
+  },
+  {
+    "name": "Argentina Mendoza",
+    "missionId": "13"
+  },
+  {
+    "name": "Argentina Neuquén",
+    "missionId": "14"
+  },
+  {
+    "name": "Argentina Resistencia",
+    "missionId": "15"
+  },
+  {
+    "name": "Argentina Rosario",
+    "missionId": "16"
+  },
+  {
+    "name": "Argentina Salta",
+    "missionId": "17"
+  },
+  {
+    "name": "Argentina Santa Fe",
+    "missionId": "18"
+  },
+  {
+    "name": "Argentina Tucumán\n (July 2024)",
+    "missionId": "19"
+  },
+  {
+    "name": "Arizona Gilbert",
+    "missionId": "20"
+  },
+  {
+    "name": "Arizona Mesa",
+    "missionId": "21"
+  },
+  {
+    "name": "Arizona Phoenix",
+    "missionId": "22"
+  },
+  {
+    "name": "Arizona Scottsdale",
+    "missionId": "23"
+  },
+  {
+    "name": "Arizona Tempe",
+    "missionId": "24"
+  },
+  {
+    "name": "Arizona Tucson",
+    "missionId": "25"
+  },
+  {
+    "name": "Arkansas Bentonville",
+    "missionId": "26"
+  },
+  {
+    "name": "Arkansas Little Rock",
+    "missionId": "27"
+  },
+  {
+    "name": "Armenia/Georgia",
+    "missionId": "28"
+  },
+  {
+    "name": "Australia Adelaide",
+    "missionId": "29"
+  },
+  {
+    "name": "Australia Brisbane",
+    "missionId": "30"
+  },
+  {
+    "name": "Australia Melbourne",
+    "missionId": "31"
+  },
+  {
+    "name": "Australia Perth",
+    "missionId": "32"
+  },
+  {
+    "name": "Australia Sydney",
+    "missionId": "33"
+  },
+  {
+    "name": "Baltic",
+    "missionId": "34"
+  },
+  {
+    "name": "Barbados Bridgetown",
+    "missionId": "35"
+  },
+  {
+    "name": "Belgium / Netherlands",
+    "missionId": "36"
+  },
+  {
+    "name": "Benin Cotonou",
+    "missionId": "37"
+  },
+  {
+    "name": "Bolivia Cochabamba",
+    "missionId": "38"
+  },
+  {
+    "name": "Bolivia Cochabamba South\n (July 2024)",
+    "missionId": "39"
+  },
+  {
+    "name": "Bolivia La Paz",
+    "missionId": "41"
+  },
+  {
+    "name": "Bolivia La Paz El Alto",
+    "missionId": "40"
+  },
+  {
+    "name": "Bolivia Santa Cruz",
+    "missionId": "42"
+  },
+  {
+    "name": "Bolivia Santa Cruz North",
+    "missionId": "43"
+  },
+  {
+    "name": "Botswana / Namibia",
+    "missionId": "44"
+  },
+  {
+    "name": "Brazil Belo Horizonte",
+    "missionId": "46"
+  },
+  {
+    "name": "Brazil Belém",
+    "missionId": "45"
+  },
+  {
+    "name": "Brazil Brasília",
+    "missionId": "47"
+  },
+  {
+    "name": "Brazil Campinas",
+    "missionId": "48"
+  },
+  {
+    "name": "Brazil Cuiabá",
+    "missionId": "49"
+  },
+  {
+    "name": "Brazil Curitiba",
+    "missionId": "50"
+  },
+  {
+    "name": "Brazil Curitiba South",
+    "missionId": "51"
+  },
+  {
+    "name": "Brazil Florianópolis",
+    "missionId": "52"
+  },
+  {
+    "name": "Brazil Fortaleza",
+    "missionId": "54"
+  },
+  {
+    "name": "Brazil Fortaleza East",
+    "missionId": "53"
+  },
+  {
+    "name": "Brazil Goiânia",
+    "missionId": "55"
+  },
+  {
+    "name": "Brazil João Pessoa",
+    "missionId": "56"
+  },
+  {
+    "name": "Brazil Juiz de Fora",
+    "missionId": "57"
+  },
+  {
+    "name": "Brazil Londrina",
+    "missionId": "58"
+  },
+  {
+    "name": "Brazil Maceió",
+    "missionId": "59"
+  },
+  {
+    "name": "Brazil Manaus",
+    "missionId": "60"
+  },
+  {
+    "name": "Brazil Manaus South\n (July 2024)",
+    "missionId": "61"
+  },
+  {
+    "name": "Brazil Natal",
+    "missionId": "62"
+  },
+  {
+    "name": "Brazil Piracicaba",
+    "missionId": "63"
+  },
+  {
+    "name": "Brazil Porto Alegre North",
+    "missionId": "64"
+  },
+  {
+    "name": "Brazil Porto Alegre South",
+    "missionId": "65"
+  },
+  {
+    "name": "Brazil Recife North",
+    "missionId": "66"
+  },
+  {
+    "name": "Brazil Recife South",
+    "missionId": "67"
+  },
+  {
+    "name": "Brazil Ribeirão Preto",
+    "missionId": "68"
+  },
+  {
+    "name": "Brazil Rio de Janeiro North",
+    "missionId": "69"
+  },
+  {
+    "name": "Brazil Rio de Janeiro South",
+    "missionId": "70"
+  },
+  {
+    "name": "Brazil Salvador",
+    "missionId": "71"
+  },
+  {
+    "name": "Brazil Salvador South",
+    "missionId": "72"
+  },
+  {
+    "name": "Brazil Santa Maria",
+    "missionId": "73"
+  },
+  {
+    "name": "Brazil Santos",
+    "missionId": "74"
+  },
+  {
+    "name": "Brazil São Paulo East",
+    "missionId": "75"
+  },
+  {
+    "name": "Brazil São Paulo Interlagos",
+    "missionId": "76"
+  },
+  {
+    "name": "Brazil São Paulo North",
+    "missionId": "77"
+  },
+  {
+    "name": "Brazil São Paulo South",
+    "missionId": "78"
+  },
+  {
+    "name": "Brazil São Paulo West",
+    "missionId": "79"
+  },
+  {
+    "name": "Brazil Teresina",
+    "missionId": "80"
+  },
+  {
+    "name": "Brazil Vitória",
+    "missionId": "81"
+  },
+  {
+    "name": "Bulgaria/Central Eurasian",
+    "missionId": "82"
+  },
+  {
+    "name": "California Anaheim",
+    "missionId": "83"
+  },
+  {
+    "name": "California Arcadia",
+    "missionId": "84"
+  },
+  {
+    "name": "California Bakersfield",
+    "missionId": "85"
+  },
+  {
+    "name": "California Fresno",
+    "missionId": "86"
+  },
+  {
+    "name": "California Los Angeles",
+    "missionId": "87"
+  },
+  {
+    "name": "California Modesto Mision\n (July 2024)",
+    "missionId": "88"
+  },
+  {
+    "name": "California Newport Beach",
+    "missionId": "89"
+  },
+  {
+    "name": "California Oakland/San Francisco",
+    "missionId": "90"
+  },
+  {
+    "name": "California Riverside",
+    "missionId": "91"
+  },
+  {
+    "name": "California Roseville",
+    "missionId": "92"
+  },
+  {
+    "name": "California Sacramento",
+    "missionId": "93"
+  },
+  {
+    "name": "California San Bernardino",
+    "missionId": "94"
+  },
+  {
+    "name": "California San Diego",
+    "missionId": "95"
+  },
+  {
+    "name": "California San Jose",
+    "missionId": "96"
+  },
+  {
+    "name": "California Santa Rosa",
+    "missionId": "97"
+  },
+  {
+    "name": "California Ventura",
+    "missionId": "98"
+  },
+  {
+    "name": "Cambodia Phnom Penh",
+    "missionId": "99"
+  },
+  {
+    "name": "Cambodia Phnom Penh East\n (July 2024)",
+    "missionId": "100"
+  },
+  {
+    "name": "Cameroon Yaoundé",
+    "missionId": "101"
+  },
+  {
+    "name": "Canada Calgary",
+    "missionId": "102"
+  },
+  {
+    "name": "Canada Edmonton",
+    "missionId": "103"
+  },
+  {
+    "name": "Canada Montreal",
+    "missionId": "104"
+  },
+  {
+    "name": "Canada Toronto",
+    "missionId": "105"
+  },
+  {
+    "name": "Canada Vancouver",
+    "missionId": "106"
+  },
+  {
+    "name": "Canada Winnipeg",
+    "missionId": "107"
+  },
+  {
+    "name": "Cape Verde Praia",
+    "missionId": "108"
+  },
+  {
+    "name": "Chile Antofagasta",
+    "missionId": "109"
+  },
+  {
+    "name": "Chile Concepción",
+    "missionId": "110"
+  },
+  {
+    "name": "Chile Concepción South",
+    "missionId": "111"
+  },
+  {
+    "name": "Chile La Serena\n (July 2024)",
+    "missionId": "112"
+  },
+  {
+    "name": "Chile Osorno",
+    "missionId": "113"
+  },
+  {
+    "name": "Chile Rancagua",
+    "missionId": "114"
+  },
+  {
+    "name": "Chile Santiago East",
+    "missionId": "115"
+  },
+  {
+    "name": "Chile Santiago North",
+    "missionId": "116"
+  },
+  {
+    "name": "Chile Santiago South",
+    "missionId": "117"
+  },
+  {
+    "name": "Chile Santiago West",
+    "missionId": "118"
+  },
+  {
+    "name": "Chile Viña del Mar",
+    "missionId": "119"
+  },
+  {
+    "name": "China Hong Kong",
+    "missionId": "120"
+  },
+  {
+    "name": "Colombia Barranquilla",
+    "missionId": "121"
+  },
+  {
+    "name": "Colombia Bogotá North",
+    "missionId": "122"
+  },
+  {
+    "name": "Colombia Bogotá South",
+    "missionId": "123"
+  },
+  {
+    "name": "Colombia Cali",
+    "missionId": "124"
+  },
+  {
+    "name": "Colombia Medellin",
+    "missionId": "125"
+  },
+  {
+    "name": "Colorado Colorado Springs",
+    "missionId": "126"
+  },
+  {
+    "name": "Colorado Denver North",
+    "missionId": "127"
+  },
+  {
+    "name": "Colorado Denver South",
+    "missionId": "128"
+  },
+  {
+    "name": "Colorado Fort Collins",
+    "missionId": "129"
+  },
+  {
+    "name": "Costa Rica San José East",
+    "missionId": "130"
+  },
+  {
+    "name": "Costa Rica San José West",
+    "missionId": "131"
+  },
+  {
+    "name": "Czech / Slovak",
+    "missionId": "136"
+  },
+  {
+    "name": "Côte d'Ivoire Abidjan East",
+    "missionId": "132"
+  },
+  {
+    "name": "Côte d'Ivoire Abidjan North",
+    "missionId": "133"
+  },
+  {
+    "name": "Côte d'Ivoire Abidjan West",
+    "missionId": "134"
+  },
+  {
+    "name": "Côte d'Ivoire Yamoussoukro",
+    "missionId": "135"
+  },
+  {
+    "name": "Democratic Republic of the Congo Kananga",
+    "missionId": "137"
+  },
+  {
+    "name": "Democratic Republic of the Congo Kinshasa East",
+    "missionId": "138"
+  },
+  {
+    "name": "Democratic Republic of the Congo Kinshasa South\n (July 2024)",
+    "missionId": "139"
+  },
+  {
+    "name": "Democratic Republic of the Congo Kinshasa West",
+    "missionId": "140"
+  },
+  {
+    "name": "Democratic Republic of the Congo Kolwezi\n (July 2024)",
+    "missionId": "141"
+  },
+  {
+    "name": "Democratic Republic of the Congo Lubumbashi",
+    "missionId": "142"
+  },
+  {
+    "name": "Democratic Republic of the Congo Mbuji-Mayi",
+    "missionId": "143"
+  },
+  {
+    "name": "Denmark Copenhagen",
+    "missionId": "144"
+  },
+  {
+    "name": "Dominican Republic Santiago",
+    "missionId": "145"
+  },
+  {
+    "name": "Dominican Republic Santo Domingo East",
+    "missionId": "146"
+  },
+  {
+    "name": "Dominican Republic Santo Domingo North\n (July 2024)",
+    "missionId": "147"
+  },
+  {
+    "name": "Dominican Republic Santo Domingo West",
+    "missionId": "148"
+  },
+  {
+    "name": "Ecuador Guayaquil East",
+    "missionId": "149"
+  },
+  {
+    "name": "Ecuador Guayaquil North",
+    "missionId": "150"
+  },
+  {
+    "name": "Ecuador Guayaquil South",
+    "missionId": "151"
+  },
+  {
+    "name": "Ecuador Guayaquil West",
+    "missionId": "152"
+  },
+  {
+    "name": "Ecuador Quito",
+    "missionId": "153"
+  },
+  {
+    "name": "Ecuador Quito North",
+    "missionId": "154"
+  },
+  {
+    "name": "Ecuador Quito North\n (July 2024)",
+    "missionId": "155"
+  },
+  {
+    "name": "El Salvador San Salvador East",
+    "missionId": "156"
+  },
+  {
+    "name": "El Salvador San Salvador West / Belize",
+    "missionId": "157"
+  },
+  {
+    "name": "El Salvador Santa Ana",
+    "missionId": "158"
+  },
+  {
+    "name": "England Birmingham",
+    "missionId": "159"
+  },
+  {
+    "name": "England Bristol",
+    "missionId": "160"
+  },
+  {
+    "name": "England Leeds",
+    "missionId": "161"
+  },
+  {
+    "name": "England London",
+    "missionId": "162"
+  },
+  {
+    "name": "England Manchester",
+    "missionId": "163"
+  },
+  {
+    "name": "Ethiopia Addis Ababa",
+    "missionId": "164"
+  },
+  {
+    "name": "Fiji Suva",
+    "missionId": "165"
+  },
+  {
+    "name": "Finland Helsinki",
+    "missionId": "166"
+  },
+  {
+    "name": "Florida Fort Lauderdale",
+    "missionId": "167"
+  },
+  {
+    "name": "Florida Jacksonville",
+    "missionId": "168"
+  },
+  {
+    "name": "Florida Orlando",
+    "missionId": "169"
+  },
+  {
+    "name": "Florida Tallahassee\n (July 2024)",
+    "missionId": "170"
+  },
+  {
+    "name": "Florida Tampa",
+    "missionId": "171"
+  },
+  {
+    "name": "France Lyon",
+    "missionId": "172"
+  },
+  {
+    "name": "France Paris",
+    "missionId": "173"
+  },
+  {
+    "name": "Georgia Atlanta",
+    "missionId": "174"
+  },
+  {
+    "name": "Georgia Atlanta North",
+    "missionId": "175"
+  },
+  {
+    "name": "Germany Berlin",
+    "missionId": "176"
+  },
+  {
+    "name": "Germany Frankfurt",
+    "missionId": "177"
+  },
+  {
+    "name": "Germany Hamburg\n (July 2024)",
+    "missionId": "178"
+  },
+  {
+    "name": "Ghana Accra",
+    "missionId": "179"
+  },
+  {
+    "name": "Ghana Accra North\n (July 2024)",
+    "missionId": "180"
+  },
+  {
+    "name": "Ghana Accra West",
+    "missionId": "181"
+  },
+  {
+    "name": "Ghana Cape Coast",
+    "missionId": "182"
+  },
+  {
+    "name": "Ghana Kumasi",
+    "missionId": "183"
+  },
+  {
+    "name": "Ghana Takoradi\n (July 2024)",
+    "missionId": "184"
+  },
+  {
+    "name": "Guatemala Antigua",
+    "missionId": "185"
+  },
+  {
+    "name": "Guatemala Cobán",
+    "missionId": "186"
+  },
+  {
+    "name": "Guatemala Guatemala City",
+    "missionId": "189"
+  },
+  {
+    "name": "Guatemala Guatemala City Central",
+    "missionId": "187"
+  },
+  {
+    "name": "Guatemala Guatemala City East",
+    "missionId": "188"
+  },
+  {
+    "name": "Guatemala Quetzaltenango",
+    "missionId": "190"
+  },
+  {
+    "name": "Guatemala Retalhuleu",
+    "missionId": "191"
+  },
+  {
+    "name": "Haiti Port-au-Prince",
+    "missionId": "192"
+  },
+  {
+    "name": "Hawaii Honolulu",
+    "missionId": "193"
+  },
+  {
+    "name": "Hawaii Laie",
+    "missionId": "194"
+  },
+  {
+    "name": "Honduras Comayagüela",
+    "missionId": "195"
+  },
+  {
+    "name": "Honduras San Pedro Sula East",
+    "missionId": "196"
+  },
+  {
+    "name": "Honduras San Pedro Sula West",
+    "missionId": "197"
+  },
+  {
+    "name": "Honduras Tegucigalpa",
+    "missionId": "198"
+  },
+  {
+    "name": "Hungary / România",
+    "missionId": "199"
+  },
+  {
+    "name": "Idaho Boise",
+    "missionId": "200"
+  },
+  {
+    "name": "Idaho Idaho Falls",
+    "missionId": "201"
+  },
+  {
+    "name": "Idaho Pocatello",
+    "missionId": "202"
+  },
+  {
+    "name": "Illinois Chicago",
+    "missionId": "203"
+  },
+  {
+    "name": "India Bengaluru",
+    "missionId": "204"
+  },
+  {
+    "name": "India New Delhi",
+    "missionId": "205"
+  },
+  {
+    "name": "Indiana Indianapolis",
+    "missionId": "206"
+  },
+  {
+    "name": "Indonesia Jakarta",
+    "missionId": "207"
+  },
+  {
+    "name": "Iowa Iowa City",
+    "missionId": "208"
+  },
+  {
+    "name": "Italy Milan",
+    "missionId": "209"
+  },
+  {
+    "name": "Italy Rome",
+    "missionId": "210"
+  },
+  {
+    "name": "Jamaica Kingston",
+    "missionId": "211"
+  },
+  {
+    "name": "Japan Fukuoka",
+    "missionId": "212"
+  },
+  {
+    "name": "Japan Kobe",
+    "missionId": "213"
+  },
+  {
+    "name": "Japan Nagoya",
+    "missionId": "214"
+  },
+  {
+    "name": "Japan Sapporo",
+    "missionId": "216"
+  },
+  {
+    "name": "Japan Sendai\n (July 2024)",
+    "missionId": "215"
+  },
+  {
+    "name": "Japan Tokyo North",
+    "missionId": "217"
+  },
+  {
+    "name": "Japan Tokyo South",
+    "missionId": "218"
+  },
+  {
+    "name": "Kansas Wichita",
+    "missionId": "219"
+  },
+  {
+    "name": "Kentucky Louisville",
+    "missionId": "220"
+  },
+  {
+    "name": "Kenya Nairobi",
+    "missionId": "221"
+  },
+  {
+    "name": "Kenya Nairobi East\n (July 2024)",
+    "missionId": "222"
+  },
+  {
+    "name": "Korea Busan",
+    "missionId": "223"
+  },
+  {
+    "name": "Korea Daejon",
+    "missionId": "224"
+  },
+  {
+    "name": "Korea Seoul",
+    "missionId": "225"
+  },
+  {
+    "name": "Korea Seoul South",
+    "missionId": "226"
+  },
+  {
+    "name": "Liberia Monrovia",
+    "missionId": "227"
+  },
+  {
+    "name": "Louisiana Baton Rouge",
+    "missionId": "228"
+  },
+  {
+    "name": "Madagascar Antananarivo",
+    "missionId": "229"
+  },
+  {
+    "name": "Madagascar Antananarivo North\n (July 2024)",
+    "missionId": "230"
+  },
+  {
+    "name": "Marshall Islands / Kiribati",
+    "missionId": "231"
+  },
+  {
+    "name": "Maryland Baltimore",
+    "missionId": "232"
+  },
+  {
+    "name": "Massachusetts Boston",
+    "missionId": "233"
+  },
+  {
+    "name": "Michigan Detroit",
+    "missionId": "268"
+  },
+  {
+    "name": "Michigan Lansing",
+    "missionId": "269"
+  },
+  {
+    "name": "Micronesia Guam",
+    "missionId": "270"
+  },
+  {
+    "name": "Minnesota Minneapolis",
+    "missionId": "271"
+  },
+  {
+    "name": "Missouri Independence",
+    "missionId": "272"
+  },
+  {
+    "name": "Missouri St Louis",
+    "missionId": "273"
+  },
+  {
+    "name": "Mongolia Ulaanbaatar",
+    "missionId": "274"
+  },
+  {
+    "name": "Montana Billings",
+    "missionId": "275"
+  },
+  {
+    "name": "Montana Missoula\n (July 2024)",
+    "missionId": "276"
+  },
+  {
+    "name": "Mozambique Beira",
+    "missionId": "277"
+  },
+  {
+    "name": "Mozambique Maputo",
+    "missionId": "278"
+  },
+  {
+    "name": "México Aguascalientes",
+    "missionId": "234"
+  },
+  {
+    "name": "México Cancún",
+    "missionId": "235"
+  },
+  {
+    "name": "México Chihuahua",
+    "missionId": "236"
+  },
+  {
+    "name": "México Ciudad Juárez",
+    "missionId": "237"
+  },
+  {
+    "name": "México Cuernavaca",
+    "missionId": "238"
+  },
+  {
+    "name": "México Culiacán",
+    "missionId": "239"
+  },
+  {
+    "name": "México Guadalajara",
+    "missionId": "241"
+  },
+  {
+    "name": "México Guadalajara East",
+    "missionId": "240"
+  },
+  {
+    "name": "México Hermosillo",
+    "missionId": "242"
+  },
+  {
+    "name": "México Mexicali\n (July 2024)",
+    "missionId": "244"
+  },
+  {
+    "name": "México Monterrey East",
+    "missionId": "252"
+  },
+  {
+    "name": "México Monterrey West",
+    "missionId": "253"
+  },
+  {
+    "name": "México Mérida",
+    "missionId": "243"
+  },
+  {
+    "name": "México México City Chalco",
+    "missionId": "245"
+  },
+  {
+    "name": "México México City East",
+    "missionId": "246"
+  },
+  {
+    "name": "México México City North",
+    "missionId": "247"
+  },
+  {
+    "name": "México México City Northwest",
+    "missionId": "248"
+  },
+  {
+    "name": "México México City South",
+    "missionId": "249"
+  },
+  {
+    "name": "México México City Southeast",
+    "missionId": "250"
+  },
+  {
+    "name": "México México City West",
+    "missionId": "251"
+  },
+  {
+    "name": "México Oaxaca",
+    "missionId": "254"
+  },
+  {
+    "name": "México Pachuca",
+    "missionId": "255"
+  },
+  {
+    "name": "México Puebla East\n (July 2024)",
+    "missionId": "256"
+  },
+  {
+    "name": "México Puebla North",
+    "missionId": "257"
+  },
+  {
+    "name": "México Puebla South",
+    "missionId": "258"
+  },
+  {
+    "name": "México Querétaro",
+    "missionId": "259"
+  },
+  {
+    "name": "México Saltillo",
+    "missionId": "260"
+  },
+  {
+    "name": "México Tampico",
+    "missionId": "261"
+  },
+  {
+    "name": "México Tijuana",
+    "missionId": "262"
+  },
+  {
+    "name": "México Torreón",
+    "missionId": "263"
+  },
+  {
+    "name": "México Tuxtla Gutiérrez",
+    "missionId": "264"
+  },
+  {
+    "name": "México Veracruz",
+    "missionId": "265"
+  },
+  {
+    "name": "México Villahermosa",
+    "missionId": "266"
+  },
+  {
+    "name": "México Xalapa",
+    "missionId": "267"
+  },
+  {
+    "name": "Nebraska Omaha",
+    "missionId": "279"
+  },
+  {
+    "name": "Nevada Henderson\n (July 2024)",
+    "missionId": "280"
+  },
+  {
+    "name": "Nevada Las Vegas",
+    "missionId": "281"
+  },
+  {
+    "name": "Nevada Las Vegas West",
+    "missionId": "282"
+  },
+  {
+    "name": "Nevada Reno",
+    "missionId": "283"
+  },
+  {
+    "name": "New Hampshire Manchester",
+    "missionId": "284"
+  },
+  {
+    "name": "New Jersey Morristown",
+    "missionId": "285"
+  },
+  {
+    "name": "New Mexico Albuquerque",
+    "missionId": "286"
+  },
+  {
+    "name": "New Mexico Farmington",
+    "missionId": "287"
+  },
+  {
+    "name": "New York New York City",
+    "missionId": "288"
+  },
+  {
+    "name": "New York Syracuse",
+    "missionId": "289"
+  },
+  {
+    "name": "New Zealand Auckland",
+    "missionId": "290"
+  },
+  {
+    "name": "New Zealand Hamilton",
+    "missionId": "291"
+  },
+  {
+    "name": "New Zealand Wellington",
+    "missionId": "292"
+  },
+  {
+    "name": "Nicaragua Managua North",
+    "missionId": "293"
+  },
+  {
+    "name": "Nicaragua Managua South\n [paused: political unrest in 2018]",
+    "missionId": "294"
+  },
+  {
+    "name": "Nigeria Aba",
+    "missionId": "295"
+  },
+  {
+    "name": "Nigeria Abuja",
+    "missionId": "296"
+  },
+  {
+    "name": "Nigeria Benin City",
+    "missionId": "297"
+  },
+  {
+    "name": "Nigeria Calabar\n (July 2024)",
+    "missionId": "298"
+  },
+  {
+    "name": "Nigeria Enugu",
+    "missionId": "299"
+  },
+  {
+    "name": "Nigeria Ibadan",
+    "missionId": "300"
+  },
+  {
+    "name": "Nigeria Lagos",
+    "missionId": "301"
+  },
+  {
+    "name": "Nigeria Owerri",
+    "missionId": "302"
+  },
+  {
+    "name": "Nigeria Port Harcourt",
+    "missionId": "303"
+  },
+  {
+    "name": "Nigeria Port Harcourt North\n (July 2024)",
+    "missionId": "304"
+  },
+  {
+    "name": "Nigeria Uyo",
+    "missionId": "305"
+  },
+  {
+    "name": "North Carolina Charlotte",
+    "missionId": "306"
+  },
+  {
+    "name": "North Carolina Raleigh",
+    "missionId": "307"
+  },
+  {
+    "name": "North Dakota Bismarck",
+    "missionId": "308"
+  },
+  {
+    "name": "Norway Oslo",
+    "missionId": "309"
+  },
+  {
+    "name": "Ohio Cincinnati",
+    "missionId": "310"
+  },
+  {
+    "name": "Ohio Columbus",
+    "missionId": "311"
+  },
+  {
+    "name": "Oklahoma Oklahoma City",
+    "missionId": "312"
+  },
+  {
+    "name": "Oregon Eugene",
+    "missionId": "313"
+  },
+  {
+    "name": "Oregon Portland",
+    "missionId": "314"
+  },
+  {
+    "name": "Oregon Salem",
+    "missionId": "315"
+  },
+  {
+    "name": "Panamá Panamá City",
+    "missionId": "316"
+  },
+  {
+    "name": "Papua New Guinea Lae",
+    "missionId": "317"
+  },
+  {
+    "name": "Papua New Guinea Port Moresby",
+    "missionId": "318"
+  },
+  {
+    "name": "Paraguay Asunción",
+    "missionId": "319"
+  },
+  {
+    "name": "Paraguay Asunción North",
+    "missionId": "320"
+  },
+  {
+    "name": "Pennsylvania Philadelphia",
+    "missionId": "321"
+  },
+  {
+    "name": "Pennsylvania Pittsburgh",
+    "missionId": "322"
+  },
+  {
+    "name": "Perú Arequipa",
+    "missionId": "323"
+  },
+  {
+    "name": "Perú Chiclayo",
+    "missionId": "324"
+  },
+  {
+    "name": "Perú Cusco",
+    "missionId": "325"
+  },
+  {
+    "name": "Perú Huancayo",
+    "missionId": "326"
+  },
+  {
+    "name": "Perú Iquitos",
+    "missionId": "327"
+  },
+  {
+    "name": "Perú Lima Central",
+    "missionId": "328"
+  },
+  {
+    "name": "Perú Lima East",
+    "missionId": "329"
+  },
+  {
+    "name": "Perú Lima North",
+    "missionId": "330"
+  },
+  {
+    "name": "Perú Lima Northeast\n (July 2024)",
+    "missionId": "331"
+  },
+  {
+    "name": "Perú Lima South",
+    "missionId": "332"
+  },
+  {
+    "name": "Perú Lima West",
+    "missionId": "333"
+  },
+  {
+    "name": "Perú Limatambo",
+    "missionId": "334"
+  },
+  {
+    "name": "Perú Piura",
+    "missionId": "335"
+  },
+  {
+    "name": "Perú Trujillo North",
+    "missionId": "336"
+  },
+  {
+    "name": "Perú Trujillo South",
+    "missionId": "337"
+  },
+  {
+    "name": "Philippines Angeles",
+    "missionId": "338"
+  },
+  {
+    "name": "Philippines Antipolo",
+    "missionId": "339"
+  },
+  {
+    "name": "Philippines Bacolod",
+    "missionId": "340"
+  },
+  {
+    "name": "Philippines Baguio",
+    "missionId": "341"
+  },
+  {
+    "name": "Philippines Butuan",
+    "missionId": "342"
+  },
+  {
+    "name": "Philippines Cabanatuan",
+    "missionId": "343"
+  },
+  {
+    "name": "Philippines Cagayan de Oro",
+    "missionId": "344"
+  },
+  {
+    "name": "Philippines Cauayan",
+    "missionId": "345"
+  },
+  {
+    "name": "Philippines Cavite",
+    "missionId": "346"
+  },
+  {
+    "name": "Philippines Cebu",
+    "missionId": "348"
+  },
+  {
+    "name": "Philippines Cebu East",
+    "missionId": "347"
+  },
+  {
+    "name": "Philippines Davao",
+    "missionId": "349"
+  },
+  {
+    "name": "Philippines Dumaguete\n (July 2024)",
+    "missionId": "350"
+  },
+  {
+    "name": "Philippines General Santos\n (July 2024)",
+    "missionId": "351"
+  },
+  {
+    "name": "Philippines Iloilo",
+    "missionId": "352"
+  },
+  {
+    "name": "Philippines Laoag",
+    "missionId": "353"
+  },
+  {
+    "name": "Philippines Legazpi",
+    "missionId": "354"
+  },
+  {
+    "name": "Philippines Manila",
+    "missionId": "355"
+  },
+  {
+    "name": "Philippines Naga",
+    "missionId": "356"
+  },
+  {
+    "name": "Philippines Olongapo",
+    "missionId": "357"
+  },
+  {
+    "name": "Philippines Quezon City",
+    "missionId": "358"
+  },
+  {
+    "name": "Philippines Quezon City North",
+    "missionId": "359"
+  },
+  {
+    "name": "Philippines San Pablo",
+    "missionId": "360"
+  },
+  {
+    "name": "Philippines Tacloban",
+    "missionId": "361"
+  },
+  {
+    "name": "Philippines Tuguegarao\n (July 2024)",
+    "missionId": "362"
+  },
+  {
+    "name": "Philippines Urdaneta",
+    "missionId": "363"
+  },
+  {
+    "name": "Poland Warsaw",
+    "missionId": "364"
+  },
+  {
+    "name": "Portugal Lisbon",
+    "missionId": "365"
+  },
+  {
+    "name": "Portugal Porto\n (July 2024)",
+    "missionId": "366"
+  },
+  {
+    "name": "Puerto Rico San Juan",
+    "missionId": "367"
+  },
+  {
+    "name": "Republic of the Congo Brazzaville",
+    "missionId": "368"
+  },
+  {
+    "name": "Russia Moscow",
+    "missionId": "369"
+  },
+  {
+    "name": "Russia Novosibirsk",
+    "missionId": "370"
+  },
+  {
+    "name": "Russia Yekaterinburg",
+    "missionId": "371"
+  },
+  {
+    "name": "Rwanda Kigali",
+    "missionId": "372"
+  },
+  {
+    "name": "Samoa Apia",
+    "missionId": "373"
+  },
+  {
+    "name": "Scotland / Ireland",
+    "missionId": "374"
+  },
+  {
+    "name": "Sierra Leone Bo\n (July 2024)",
+    "missionId": "375"
+  },
+  {
+    "name": "Sierra Leone Freetown",
+    "missionId": "376"
+  },
+  {
+    "name": "Singapore",
+    "missionId": "377"
+  },
+  {
+    "name": "South Africa Cape Town",
+    "missionId": "378"
+  },
+  {
+    "name": "South Africa Durban",
+    "missionId": "379"
+  },
+  {
+    "name": "South Africa Johannesburg",
+    "missionId": "380"
+  },
+  {
+    "name": "South Carolina Charleston\n (July 2024)",
+    "missionId": "381"
+  },
+  {
+    "name": "South Carolina Columbia",
+    "missionId": "382"
+  },
+  {
+    "name": "Spain Barcelona",
+    "missionId": "383"
+  },
+  {
+    "name": "Spain Madrid North",
+    "missionId": "384"
+  },
+  {
+    "name": "Spain Madrid South",
+    "missionId": "385"
+  },
+  {
+    "name": "Sweden Stockholm",
+    "missionId": "386"
+  },
+  {
+    "name": "Tahiti Papeete",
+    "missionId": "387"
+  },
+  {
+    "name": "Taiwan Taichung",
+    "missionId": "388"
+  },
+  {
+    "name": "Taiwan Taipei",
+    "missionId": "389"
+  },
+  {
+    "name": "Tanzania Dar es Salaam",
+    "missionId": "390"
+  },
+  {
+    "name": "Tennessee Knoxville",
+    "missionId": "391"
+  },
+  {
+    "name": "Tennessee Nashville",
+    "missionId": "392"
+  },
+  {
+    "name": "Texas Austin",
+    "missionId": "393"
+  },
+  {
+    "name": "Texas Dallas East",
+    "missionId": "394"
+  },
+  {
+    "name": "Texas Dallas South\n (July 2024)",
+    "missionId": "395"
+  },
+  {
+    "name": "Texas Dallas West",
+    "missionId": "396"
+  },
+  {
+    "name": "Texas El Paso\n (July 2024)",
+    "missionId": "397"
+  },
+  {
+    "name": "Texas Fort Worth",
+    "missionId": "398"
+  },
+  {
+    "name": "Texas Houston",
+    "missionId": "400"
+  },
+  {
+    "name": "Texas Houston East",
+    "missionId": "399"
+  },
+  {
+    "name": "Texas Houston South",
+    "missionId": "401"
+  },
+  {
+    "name": "Texas Lubbock",
+    "missionId": "402"
+  },
+  {
+    "name": "Texas McAllen",
+    "missionId": "403"
+  },
+  {
+    "name": "Texas San Antonio",
+    "missionId": "404"
+  },
+  {
+    "name": "Thailand Bangkok",
+    "missionId": "405"
+  },
+  {
+    "name": "Thailand Bangkok East\n (July 2024)",
+    "missionId": "406"
+  },
+  {
+    "name": "Tonga Nuku'alofa",
+    "missionId": "407"
+  },
+  {
+    "name": "Tonga Outer Islands",
+    "missionId": "408"
+  },
+  {
+    "name": "Trinidad Port of Spain",
+    "missionId": "409"
+  },
+  {
+    "name": "Uganda Kampala",
+    "missionId": "410"
+  },
+  {
+    "name": "Ukraine Dnipro",
+    "missionId": "411"
+  },
+  {
+    "name": "Ukraine Kyiv / Moldova",
+    "missionId": "412"
+  },
+  {
+    "name": "Uruguay Montevideo",
+    "missionId": "413"
+  },
+  {
+    "name": "Uruguay Montevideo West",
+    "missionId": "414"
+  },
+  {
+    "name": "Utah Layton",
+    "missionId": "415"
+  },
+  {
+    "name": "Utah Ogden",
+    "missionId": "416"
+  },
+  {
+    "name": "Utah Orem",
+    "missionId": "417"
+  },
+  {
+    "name": "Utah Provo",
+    "missionId": "418"
+  },
+  {
+    "name": "Utah Salt Lake City",
+    "missionId": "419"
+  },
+  {
+    "name": "Utah Salt Lake City East\n (July 2024)",
+    "missionId": "420"
+  },
+  {
+    "name": "Utah Salt Lake City Headquarters",
+    "missionId": "421"
+  },
+  {
+    "name": "Utah Salt Lake City South",
+    "missionId": "422"
+  },
+  {
+    "name": "Utah Salt Lake City Temple Square",
+    "missionId": "423"
+  },
+  {
+    "name": "Utah Salt Lake City West",
+    "missionId": "424"
+  },
+  {
+    "name": "Utah Saratoga Springs\n (July 2024)",
+    "missionId": "425"
+  },
+  {
+    "name": "Utah Spanish Fork\n (July 2024)",
+    "missionId": "426"
+  },
+  {
+    "name": "Utah St. George",
+    "missionId": "427"
+  },
+  {
+    "name": "Vanuatu Port Vila",
+    "missionId": "428"
+  },
+  {
+    "name": "Venezuela Barcelona",
+    "missionId": "429"
+  },
+  {
+    "name": "Venezuela Caracas",
+    "missionId": "430"
+  },
+  {
+    "name": "Venezuela Maracaibo",
+    "missionId": "431"
+  },
+  {
+    "name": "Venezuela Valencia",
+    "missionId": "432"
+  },
+  {
+    "name": "Vietnam Hanoi",
+    "missionId": "433"
+  },
+  {
+    "name": "Virginia Richmond",
+    "missionId": "434"
+  },
+  {
+    "name": "Washington DC North",
+    "missionId": "435"
+  },
+  {
+    "name": "Washington DC South",
+    "missionId": "436"
+  },
+  {
+    "name": "Washington Everett",
+    "missionId": "437"
+  },
+  {
+    "name": "Washington Kennewick",
+    "missionId": "438"
+  },
+  {
+    "name": "Washington Seattle",
+    "missionId": "439"
+  },
+  {
+    "name": "Washington Spokane",
+    "missionId": "440"
+  },
+  {
+    "name": "Washington Tacoma",
+    "missionId": "441"
+  },
+  {
+    "name": "Washington Vancouver",
+    "missionId": "442"
+  },
+  {
+    "name": "Washington Yakima",
+    "missionId": "443"
+  },
+  {
+    "name": "West Virginia Charleston",
+    "missionId": "444"
+  },
+  {
+    "name": "Wisconsin Milwaukee",
+    "missionId": "445"
+  },
+  {
+    "name": "Zambia Lusaka",
+    "missionId": "446"
+  },
+  {
+    "name": "Zimbabwe Bulawayo",
+    "missionId": "447"
+  },
+  {
+    "name": "Zimbabwe Harare",
+    "missionId": "448"
+  }
+]

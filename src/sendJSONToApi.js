@@ -39,24 +39,25 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var axios_1 = require("axios");
 var fsExtra = require("fs-extra");
 var jsonModifier_1 = require("./jsonModifier");
-var LoadInJSONCallEndpoint = /** @class */ (function () {
-    function LoadInJSONCallEndpoint() {
+var SendJSONToApi = /** @class */ (function () {
+    function SendJSONToApi() {
     }
-    LoadInJSONCallEndpoint.loadInJSONAndCallEndpoint = function () {
+    SendJSONToApi.loadInJSONAndCallEndpoint = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var jsonFilePath, endpointUrl, idToken, shouldChangePropertyNames, jsonPropertyNameChanges, shouldAddIndexAsId, idName, jsonDataFromFile, jsonList, startingIndex, endingIndex, i, postResponse, error_1;
+            var jsonFilePath, idToken, endpointUrl, shouldChangePropertyNames, jsonPropertyNameChanges, shouldAddIndexAsId, indexShouldBeString, idName, jsonDataFromFile, jsonList, startingIndex, endingIndex, i, postResponse, error_1;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
                         jsonFilePath = this.FILE_PREFIX + 'exampleJson.json';
-                        endpointUrl = 'https://actualValue.execute-api.us-east-2.amazonaws.com/prod';
                         idToken = '';
+                        endpointUrl = '';
                         shouldChangePropertyNames = false;
                         jsonPropertyNameChanges = [
                             [],
                             []
                         ];
-                        shouldAddIndexAsId = true;
+                        shouldAddIndexAsId = false;
+                        indexShouldBeString = true;
                         idName = "id";
                         _a.label = 1;
                     case 1:
@@ -75,12 +76,12 @@ var LoadInJSONCallEndpoint = /** @class */ (function () {
                             jsonModifier_1.JSONModifier.changePropertyNames(jsonList[i], jsonPropertyNameChanges);
                         }
                         if (shouldAddIndexAsId) {
-                            jsonModifier_1.JSONModifier.addIdToJsonElement(jsonList[i], i, idName);
+                            jsonModifier_1.JSONModifier.addIdToJsonElement(jsonList[i], i, idName, indexShouldBeString);
                         }
                         return [4 /*yield*/, this.makePostRequest(jsonList[i], endpointUrl, idToken)];
                     case 4:
                         postResponse = _a.sent();
-                        console.log(postResponse);
+                        console.log("Response Retrieved", postResponse);
                         _a.label = 5;
                     case 5:
                         i++;
@@ -95,7 +96,7 @@ var LoadInJSONCallEndpoint = /** @class */ (function () {
             });
         });
     };
-    LoadInJSONCallEndpoint.makePostRequest = function (jsonData, endpointUrl, idToken) {
+    SendJSONToApi.makePostRequest = function (jsonData, endpointUrl, idToken) {
         return __awaiter(this, void 0, void 0, function () {
             var dummyApiUrl, dummyAxiosResponse, axiosResponse;
             return __generator(this, function (_a) {
@@ -114,7 +115,7 @@ var LoadInJSONCallEndpoint = /** @class */ (function () {
             });
         });
     };
-    LoadInJSONCallEndpoint.FILE_PREFIX = './src/json/';
-    return LoadInJSONCallEndpoint;
+    SendJSONToApi.FILE_PREFIX = './src/json/';
+    return SendJSONToApi;
 }());
-LoadInJSONCallEndpoint.loadInJSONAndCallEndpoint();
+SendJSONToApi.loadInJSONAndCallEndpoint();

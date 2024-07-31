@@ -2,7 +2,7 @@ import axios from 'axios';
 import * as fsExtra from 'fs-extra';
 import { JSONModifier } from './jsonModifier';
 
-class LoadInJSONCallEndpoint {
+class SendJSONToApi {
     static FILE_PREFIX = './src/json/';
 
     static async loadInJSONAndCallEndpoint() {
@@ -82,4 +82,4 @@ class LoadInJSONCallEndpoint {
     }
 }
 
-LoadInJSONCallEndpoint.loadInJSONAndCallEndpoint();
+SendJSONToApi.loadInJSONAndCallEndpoint();
