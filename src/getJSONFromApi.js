@@ -41,7 +41,7 @@ var fs = require("fs");
 var GetJSONFromApi = /** @class */ (function () {
     function GetJSONFromApi() {
     }
-    GetJSONFromApi.getLocalizations = function () {
+    GetJSONFromApi.getDataFromApiAndWriteToFile = function () {
         return __awaiter(this, void 0, void 0, function () {
             var idToken, getEndpointUrl, returnedData, jsonFilePath;
             return __generator(this, function (_a) {
@@ -53,13 +53,13 @@ var GetJSONFromApi = /** @class */ (function () {
                     case 1:
                         returnedData = _a.sent();
                         jsonFilePath = this.FILE_PREFIX + 'exampleJson.json';
-                        this.writeLocalizationsToFile(returnedData, jsonFilePath);
+                        this.writeToFile(returnedData, jsonFilePath);
                         return [2 /*return*/];
                 }
             });
         });
     };
-    GetJSONFromApi.writeLocalizationsToFile = function (returnedJSONData, filePath) {
+    GetJSONFromApi.writeToFile = function (returnedJSONData, filePath) {
         return __awaiter(this, void 0, void 0, function () {
             var jsonArray;
             return __generator(this, function (_a) {
@@ -102,4 +102,4 @@ var GetJSONFromApi = /** @class */ (function () {
     GetJSONFromApi.FILE_PREFIX = './src/json/fromAPI/';
     return GetJSONFromApi;
 }());
-GetJSONFromApi.getLocalizations();
+GetJSONFromApi.getDataFromApiAndWriteToFile();

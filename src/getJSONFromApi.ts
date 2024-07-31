@@ -4,7 +4,7 @@ import * as fs from 'fs';
 class GetJSONFromApi {
     static FILE_PREFIX = './src/json/fromAPI/';
 
-    static async getLocalizations() {
+    static async getDataFromApiAndWriteToFile() {
         /* To find your MTC idToken: 
             Log into Embark on web, 
             Look in the network tab, 
@@ -20,10 +20,10 @@ class GetJSONFromApi {
             To write results to a JSON file
         */
         const jsonFilePath = this.FILE_PREFIX + 'exampleJson.json';
-        this.writeLocalizationsToFile(returnedData, jsonFilePath);
+        this.writeToFile(returnedData, jsonFilePath);
     }
 
-    static async writeLocalizationsToFile(returnedJSONData: any, filePath: string) {
+    static async writeToFile(returnedJSONData: any, filePath: string) {
         const jsonArray = JSON.stringify(returnedJSONData, null, 2);  // Convert the array to a JSON string with 2-space indentation for readability
     
         await fs.writeFile(filePath, jsonArray, 'utf8', (err) => {
@@ -46,4 +46,4 @@ class GetJSONFromApi {
     }
 }
 
-GetJSONFromApi.getLocalizations();
+GetJSONFromApi.getDataFromApiAndWriteToFile();
