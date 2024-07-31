@@ -44,15 +44,15 @@ var LsaSendLocalizations = /** @class */ (function () {
     }
     LsaSendLocalizations.loadInJSONAndCallEndpoint = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var jsonFilePath, isProd, endpoint, lsaService, localizations, accessToken, fullUrl, response;
+            var isProd, endpoint, lsaService, jsonReadFilePath, localizations, accessToken, fullUrl, response;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        jsonFilePath = this.FILE_PREFIX + '/new-values.json';
                         isProd = true;
                         endpoint = 'update';
                         lsaService = new LsaService_1.LsaService(isProd);
-                        return [4 /*yield*/, this.getLocalizationListFromJson(jsonFilePath)];
+                        jsonReadFilePath = lsaService.getReadJsonFilePath();
+                        return [4 /*yield*/, this.getLocalizationListFromJson(jsonReadFilePath)];
                     case 1:
                         localizations = _a.sent();
                         accessToken = lsaService.getAccessToken();
@@ -111,7 +111,6 @@ var LsaSendLocalizations = /** @class */ (function () {
             });
         });
     };
-    LsaSendLocalizations.FILE_PREFIX = './src/json/lsa';
     return LsaSendLocalizations;
 }());
 LsaSendLocalizations.loadInJSONAndCallEndpoint();

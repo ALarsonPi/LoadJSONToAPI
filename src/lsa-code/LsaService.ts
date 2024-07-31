@@ -20,7 +20,7 @@ export class LsaService {
     PROD_WRITE_FILE_PATH = "src/json/lsa/prod/prod-localizations.json";
     
     DEV_READ_FILE_PATH = 'src/json/lsa/dev/dev-to-update.json';
-    PROD_READ_FILE_PATH = 'src/json/lsa/dev/prod-to-update.json';
+    PROD_READ_FILE_PATH = 'src/json/lsa/prod/prod-to-update.json';
 
 
     constructor(isProd: boolean) {

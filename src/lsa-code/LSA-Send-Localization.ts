@@ -7,7 +7,7 @@ class LsaSendLocalizations {
 
     static async loadInJSONAndCallEndpoint() {
         // Set these properties
-        const isProd = false;
+        const isProd = true;
         const endpoint = 'update'; // Options: 'update' / 'save'
 
         const lsaService = new LsaService(isProd);

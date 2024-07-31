@@ -17,8 +17,10 @@ var LsaService = /** @class */ (function () {
         this.PROD_ACCESS_TOKEN = "";
         this.DEV_HOST_URL = 'https://api.test.lang.mtc.byu.edu/lsa/v1';
         this.PROD_HOST_URL = 'https://api.lang.mtc.byu.edu/lsa/v1';
-        this.DEV_JSON_FILE_PATH = "src/json/lsa/dev/dev-localizations.json";
-        this.PROD_JSON_FILE_PATH = "src/json/lsa/prod/prod-localizations.json";
+        this.DEV_WRITE_FILE_PATH = "src/json/lsa/dev/dev-localizations.json";
+        this.PROD_WRITE_FILE_PATH = "src/json/lsa/prod/prod-localizations.json";
+        this.DEV_READ_FILE_PATH = 'src/json/lsa/dev/dev-to-update.json';
+        this.PROD_READ_FILE_PATH = 'src/json/lsa/prod/prod-to-update.json';
         this.setIsProd(isProd);
     }
     LsaService.prototype.getAccessToken = function () {
@@ -28,8 +30,11 @@ var LsaService = /** @class */ (function () {
         var hostUrl = this.isProd ? this.PROD_HOST_URL : this.DEV_HOST_URL;
         return hostUrl + '/localization/item/' + endpoint;
     };
-    LsaService.prototype.getJsonFilePath = function () {
-        return this.isProd ? this.PROD_JSON_FILE_PATH : this.DEV_JSON_FILE_PATH;
+    LsaService.prototype.getWriteJsonFilePath = function () {
+        return this.isProd ? this.PROD_WRITE_FILE_PATH : this.DEV_WRITE_FILE_PATH;
+    };
+    LsaService.prototype.getReadJsonFilePath = function () {
+        return this.isProd ? this.PROD_READ_FILE_PATH : this.DEV_READ_FILE_PATH;
     };
     LsaService.prototype.setIsProd = function (isProd) {
         this.isProd = isProd;
