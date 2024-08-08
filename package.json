@@ -5,9 +5,10 @@
   "main": "loadJSON.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc src/sendJSONToApi.ts && tsc src/getJSONFromApi.ts",
+    "build": "tsc src/sendJSONToApi.ts && tsc src/getJSONFromApi.ts && tsc src/modifyJSON.ts",
     "send": "node src/sendJSONToApi.js",
-    "get": "node src/getJSONFromApi.js"
+    "get": "node src/getJSONFromApi.js",
+    "modify": "node src/modifyJSON.js"
   },
   "author": "",
   "license": "ISC",

@@ -38,7 +38,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var axios_1 = require("axios");
 var fsExtra = require("fs-extra");
-var jsonModifier_1 = require("./jsonModifier");
+var jsonModificationService_1 = require("./jsonModificationService");
 var SendJSONToApi = /** @class */ (function () {
     function SendJSONToApi() {
     }
@@ -49,8 +49,8 @@ var SendJSONToApi = /** @class */ (function () {
                 switch (_a.label) {
                     case 0:
                         jsonFilePath = this.FILE_PREFIX + 'exampleJson.json';
-                        idToken = '';
-                        endpointUrl = '';
+                        idToken = "eyJraWQiOiJDZmwyT0tERCs0VHBcL05jcGJvMWxNcGNsRnhOM0RpWTh5MXFaZjhrQmE2TT0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiVlJmZWd1MG1La3hSOFAtbmRreUhYUSIsImN1c3RvbTpsZHNhY2NvdW50aWQiOiIzNjE4NTA2OTIzNDYxNzc3Iiwic3ViIjoiYzk2ZjBiZGEtYjk3Zi00NzE2LTgxODItNTIyNmQwZjI5Y2EwIiwiY29nbml0bzpncm91cHMiOlsidXMtd2VzdC0yX2Y0SFp2RHpwal9DaHVyY2gtQWNjb3VudC1PcGVuSUQiLCJ0YWxsLWFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMi5hbWF6b25hd3MuY29tXC91cy13ZXN0LTJfZjRIWnZEenBqIiwiY29nbml0bzp1c2VybmFtZSI6ImNodXJjaC1hY2NvdW50LW9wZW5pZF8wMHUxd3hkZ2tvcG5keHUxYzM1NyIsImdpdmVuX25hbWUiOiJBbGVjIFJpY2hhcmQiLCJub25jZSI6Ii1TaHM5aXN6TlpvRzFWcjB4TkE0V1lYRWNqZWNNRVMwUURYTVVtLVBaeVE0S3QtN1Yxd0dYZk15MVkyeVV0NlJMcTYxbVR3MVpBQWYwNV9uanJUaUdyYkhUTVo1bUU3NUNST3BCcW9mbGpPZzVnZTJfbFZvZ2pLd0pnTVQ1akNneF95dW85Yk5nc1lfZ0hGMjZCWGktX0huWEVtZ3YyMjhpN0ZoenNuVnZVSSIsImF1ZCI6IjczZTJ0ZGphNWhpZHZkMnY5MWJwZmFsaG9wIiwiaWRlbnRpdGllcyI6W3sidXNlcklkIjoiMDB1MXd4ZGdrb3BORHhVMUMzNTciLCJwcm92aWRlck5hbWUiOiJDaHVyY2gtQWNjb3VudC1PcGVuSUQiLCJwcm92aWRlclR5cGUiOiJPSURDIiwiaXNzdWVyIjpudWxsLCJwcmltYXJ5IjoidHJ1ZSIsImRhdGVDcmVhdGVkIjoiMTY3Mzk3MTE0MDAxMCJ9XSwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MjMxMzE0MDYsImV4cCI6MTcyMzEzNTAwNiwiaWF0IjoxNzIzMTMxNDA2LCJmYW1pbHlfbmFtZSI6IkxhcnNvbiIsImVtYWlsIjoiYWxhcnNvbnBpQGdtYWlsLmNvbSJ9.NjLS51l5VZDlMcGUt9BWlSVxHx7Quc8B1euCHL0-st3gT2oHplSdEVnB6DL5pdFjXi3sUbUj9jv6X-Z9NBqMB7KajFE7dSSQQjmSN5HOFJQ2vTmKp49tgCSEYAZRYWcxNzMS4LF8Od13Wc_qtS-ZeN_NHfvITNJlfp7L6AGki0JO59rT-DCtDUHF5i2pEAX86yIuJtMb4R6jbYD8chLWdmCFVoHHFKbvwgLwcSeJ1pAyE_yOL0AohsDMnw7heEnSUDAZgkSRBYTOrOJQwOA8snot1qmVlobZmWQ1AvULVg8dqt2LOZIkyEO9RvE-J5uNDDxpyo1rVdJjeBLMnHnuDA";
+                        endpointUrl = 'https://3ojfzhyjld.execute-api.us-east-2.amazonaws.com/prod/missions';
                         shouldChangePropertyNames = false;
                         jsonPropertyNameChanges = [
                             [],
@@ -73,10 +73,10 @@ var SendJSONToApi = /** @class */ (function () {
                     case 3:
                         if (!(i < endingIndex)) return [3 /*break*/, 6];
                         if (shouldChangePropertyNames) {
-                            jsonModifier_1.JSONModifier.changePropertyNames(jsonList[i], jsonPropertyNameChanges);
+                            jsonModificationService_1.JSONModificationService.changePropertyNames(jsonList[i], jsonPropertyNameChanges);
                         }
                         if (shouldAddIndexAsId) {
-                            jsonModifier_1.JSONModifier.addIdToJsonElement(jsonList[i], i, idName, indexShouldBeString);
+                            jsonModificationService_1.JSONModificationService.addIdToJsonElement(jsonList[i], i, idName, indexShouldBeString);
                         }
                         return [4 /*yield*/, this.makePostRequest(jsonList[i], endpointUrl, idToken)];
                     case 4:

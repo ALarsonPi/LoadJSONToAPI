@@ -1,13 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.JSONModifier = void 0;
-var JSONModifier = /** @class */ (function () {
-    function JSONModifier() {
+exports.JSONModificationService = void 0;
+var JSONModificationService = /** @class */ (function () {
+    function JSONModificationService() {
     }
-    JSONModifier.addIdToJsonElement = function (jsonData, id, idName, shouldBeString) {
+    JSONModificationService.addIdToJsonElement = function (jsonData, id, idName, shouldBeString) {
         jsonData[idName] = (shouldBeString) ? id.toString() : id;
     };
-    JSONModifier.changePropertyNames = function (jsonData, propertyNames) {
+    JSONModificationService.changePropertyNames = function (jsonData, propertyNames) {
         propertyNames.forEach(function (pair) {
             var originalName = pair[0], modifiedName = pair[1];
             if (!jsonData.hasOwnProperty(originalName)) {
@@ -19,6 +19,6 @@ var JSONModifier = /** @class */ (function () {
             delete jsonData[originalName];
         });
     };
-    return JSONModifier;
+    return JSONModificationService;
 }());
-exports.JSONModifier = JSONModifier;
+exports.JSONModificationService = JSONModificationService;

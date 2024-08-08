@@ -1,4 +1,4 @@
-export class JSONModifier {
+export class JSONModificationService {
     static addIdToJsonElement(jsonData: { [key: string]: string|number }, id: number, idName: string, shouldBeString: boolean): void {
         jsonData[idName] = (shouldBeString) ? id.toString() : id;
     }
