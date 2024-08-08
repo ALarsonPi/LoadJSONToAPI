@@ -2360,20 +2360,6 @@
     "missionId": "154"
   },
   {
-    "name": "Ecuador Quito North",
-    "local_name": "",
-    "hq": "",
-    "languages": [
-      "Spanish"
-    ],
-    "area": "South America Northwest",
-    "regions": [
-      "Ecuador"
-    ],
-    "temple": "",
-    "missionId": "154"
-  },
-  {
     "name": "El Salvador San Salvador East",
     "local_name": "Mision El Salvador San Salvador Este",
     "hq": "San Salvador, El Salvador",

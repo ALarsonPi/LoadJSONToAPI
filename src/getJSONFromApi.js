@@ -47,12 +47,12 @@ var GetJSONFromApi = /** @class */ (function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        idToken = '';
+                        idToken = "";
                         getEndpointUrl = '';
                         return [4 /*yield*/, this.makeGetRequest(getEndpointUrl, idToken)];
                     case 1:
                         returnedData = _a.sent();
-                        jsonFilePath = this.FILE_PREFIX + 'exampleJson.json';
+                        jsonFilePath = this.FILE_PREFIX + 'getMissionsList.json';
                         this.writeToFile(returnedData, jsonFilePath);
                         return [2 /*return*/];
                 }

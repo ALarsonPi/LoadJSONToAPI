@@ -11,7 +11,7 @@ class GetJSONFromApi {
             Find 'token' -> Payload, 
             Copy entire 'id-token') 
         */
-        const idToken = '';
+        const idToken = "";
         const getEndpointUrl = '';
 
         const returnedData = await this.makeGetRequest(getEndpointUrl, idToken);
@@ -19,7 +19,7 @@ class GetJSONFromApi {
         /*
             To write results to a JSON file
         */
-        const jsonFilePath = this.FILE_PREFIX + 'exampleJson.json';
+        const jsonFilePath = this.FILE_PREFIX + 'getMissionsList.json';
         this.writeToFile(returnedData, jsonFilePath);
     }
 

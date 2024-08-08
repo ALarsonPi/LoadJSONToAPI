@@ -76,7 +76,7 @@
     "missionId": "18"
   },
   {
-    "name": "Argentina Tucumán\n (July 2024)",
+    "name": "Argentina Tucumán",
     "missionId": "19"
   },
   {
@@ -156,7 +156,7 @@
     "missionId": "38"
   },
   {
-    "name": "Bolivia Cochabamba South\n (July 2024)",
+    "name": "Bolivia Cochabamba South",
     "missionId": "39"
   },
   {
@@ -244,7 +244,7 @@
     "missionId": "60"
   },
   {
-    "name": "Brazil Manaus South\n (July 2024)",
+    "name": "Brazil Manaus South",
     "missionId": "61"
   },
   {
@@ -352,7 +352,7 @@
     "missionId": "87"
   },
   {
-    "name": "California Modesto Mision\n (July 2024)",
+    "name": "California Modesto Mision",
     "missionId": "88"
   },
   {
@@ -400,7 +400,7 @@
     "missionId": "99"
   },
   {
-    "name": "Cambodia Phnom Penh East\n (July 2024)",
+    "name": "Cambodia Phnom Penh East",
     "missionId": "100"
   },
   {
@@ -448,7 +448,7 @@
     "missionId": "111"
   },
   {
-    "name": "Chile La Serena\n (July 2024)",
+    "name": "Chile La Serena",
     "missionId": "112"
   },
   {
@@ -556,7 +556,7 @@
     "missionId": "138"
   },
   {
-    "name": "Democratic Republic of the Congo Kinshasa South\n (July 2024)",
+    "name": "Democratic Republic of the Congo Kinshasa South",
     "missionId": "139"
   },
   {
@@ -564,7 +564,7 @@
     "missionId": "140"
   },
   {
-    "name": "Democratic Republic of the Congo Kolwezi\n (July 2024)",
+    "name": "Democratic Republic of the Congo Kolwezi",
     "missionId": "141"
   },
   {
@@ -588,7 +588,7 @@
     "missionId": "146"
   },
   {
-    "name": "Dominican Republic Santo Domingo North\n (July 2024)",
+    "name": "Dominican Republic Santo Domingo North",
     "missionId": "147"
   },
   {
@@ -618,10 +618,6 @@
   {
     "name": "Ecuador Quito North",
     "missionId": "154"
-  },
-  {
-    "name": "Ecuador Quito North\n (July 2024)",
-    "missionId": "155"
   },
   {
     "name": "El Salvador San Salvador East",
@@ -680,7 +676,7 @@
     "missionId": "169"
   },
   {
-    "name": "Florida Tallahassee\n (July 2024)",
+    "name": "Florida Tallahassee",
     "missionId": "170"
   },
   {
@@ -712,7 +708,7 @@
     "missionId": "177"
   },
   {
-    "name": "Germany Hamburg\n (July 2024)",
+    "name": "Germany Hamburg",
     "missionId": "178"
   },
   {
@@ -720,7 +716,7 @@
     "missionId": "179"
   },
   {
-    "name": "Ghana Accra North\n (July 2024)",
+    "name": "Ghana Accra North",
     "missionId": "180"
   },
   {
@@ -736,7 +732,7 @@
     "missionId": "183"
   },
   {
-    "name": "Ghana Takoradi\n (July 2024)",
+    "name": "Ghana Takoradi",
     "missionId": "184"
   },
   {
@@ -864,7 +860,7 @@
     "missionId": "216"
   },
   {
-    "name": "Japan Sendai\n (July 2024)",
+    "name": "Japan Sendai",
     "missionId": "215"
   },
   {
@@ -888,7 +884,7 @@
     "missionId": "221"
   },
   {
-    "name": "Kenya Nairobi East\n (July 2024)",
+    "name": "Kenya Nairobi East",
     "missionId": "222"
   },
   {
@@ -920,7 +916,7 @@
     "missionId": "229"
   },
   {
-    "name": "Madagascar Antananarivo North\n (July 2024)",
+    "name": "Madagascar Antananarivo North",
     "missionId": "230"
   },
   {
@@ -968,7 +964,7 @@
     "missionId": "275"
   },
   {
-    "name": "Montana Missoula\n (July 2024)",
+    "name": "Montana Missoula",
     "missionId": "276"
   },
   {
@@ -1016,7 +1012,7 @@
     "missionId": "242"
   },
   {
-    "name": "México Mexicali\n (July 2024)",
+    "name": "México Mexicali",
     "missionId": "244"
   },
   {
@@ -1068,7 +1064,7 @@
     "missionId": "255"
   },
   {
-    "name": "México Puebla East\n (July 2024)",
+    "name": "México Puebla East",
     "missionId": "256"
   },
   {
@@ -1120,7 +1116,7 @@
     "missionId": "279"
   },
   {
-    "name": "Nevada Henderson\n (July 2024)",
+    "name": "Nevada Henderson",
     "missionId": "280"
   },
   {
@@ -1192,7 +1188,7 @@
     "missionId": "297"
   },
   {
-    "name": "Nigeria Calabar\n (July 2024)",
+    "name": "Nigeria Calabar",
     "missionId": "298"
   },
   {
@@ -1216,7 +1212,7 @@
     "missionId": "303"
   },
   {
-    "name": "Nigeria Port Harcourt North\n (July 2024)",
+    "name": "Nigeria Port Harcourt North",
     "missionId": "304"
   },
   {
@@ -1324,7 +1320,7 @@
     "missionId": "330"
   },
   {
-    "name": "Perú Lima Northeast\n (July 2024)",
+    "name": "Perú Lima Northeast",
     "missionId": "331"
   },
   {
@@ -1400,11 +1396,11 @@
     "missionId": "349"
   },
   {
-    "name": "Philippines Dumaguete\n (July 2024)",
+    "name": "Philippines Dumaguete",
     "missionId": "350"
   },
   {
-    "name": "Philippines General Santos\n (July 2024)",
+    "name": "Philippines General Santos",
     "missionId": "351"
   },
   {
@@ -1448,7 +1444,7 @@
     "missionId": "361"
   },
   {
-    "name": "Philippines Tuguegarao\n (July 2024)",
+    "name": "Philippines Tuguegarao",
     "missionId": "362"
   },
   {
@@ -1464,7 +1460,7 @@
     "missionId": "365"
   },
   {
-    "name": "Portugal Porto\n (July 2024)",
+    "name": "Portugal Porto",
     "missionId": "366"
   },
   {
@@ -1500,7 +1496,7 @@
     "missionId": "374"
   },
   {
-    "name": "Sierra Leone Bo\n (July 2024)",
+    "name": "Sierra Leone Bo",
     "missionId": "375"
   },
   {
@@ -1524,7 +1520,7 @@
     "missionId": "380"
   },
   {
-    "name": "South Carolina Charleston\n (July 2024)",
+    "name": "South Carolina Charleston",
     "missionId": "381"
   },
   {
@@ -1580,7 +1576,7 @@
     "missionId": "394"
   },
   {
-    "name": "Texas Dallas South\n (July 2024)",
+    "name": "Texas Dallas South",
     "missionId": "395"
   },
   {
@@ -1588,7 +1584,7 @@
     "missionId": "396"
   },
   {
-    "name": "Texas El Paso\n (July 2024)",
+    "name": "Texas El Paso",
     "missionId": "397"
   },
   {
@@ -1624,7 +1620,7 @@
     "missionId": "405"
   },
   {
-    "name": "Thailand Bangkok East\n (July 2024)",
+    "name": "Thailand Bangkok East",
     "missionId": "406"
   },
   {
@@ -1680,7 +1676,7 @@
     "missionId": "419"
   },
   {
-    "name": "Utah Salt Lake City East\n (July 2024)",
+    "name": "Utah Salt Lake City East",
     "missionId": "420"
   },
   {
@@ -1700,11 +1696,11 @@
     "missionId": "424"
   },
   {
-    "name": "Utah Saratoga Springs\n (July 2024)",
+    "name": "Utah Saratoga Springs",
     "missionId": "425"
   },
   {
-    "name": "Utah Spanish Fork\n (July 2024)",
+    "name": "Utah Spanish Fork",
     "missionId": "426"
   },
   {

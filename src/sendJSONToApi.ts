@@ -1,13 +1,12 @@
 import axios from 'axios';
 import * as fsExtra from 'fs-extra';
-import { JSONModificationService } from './jsonModificationService';
 
 class SendJSONToApi {
     static FILE_PREFIX = './src/json/';
 
     static async loadInJSONAndCallEndpoint() {
         // Load JSON from a file. Please put json files in 'json' folder
-        const jsonFilePath = this.FILE_PREFIX + 'exampleJson.json';
+        const jsonFilePath = this.FILE_PREFIX + 'missions.json';
 
         /* To find your MTC idToken: 
             Log into Embark on web, 
@@ -15,31 +14,8 @@ class SendJSONToApi {
             Find 'token' -> Payload, 
             Copy entire 'id-token') 
         */
-        
-
-        const idToken = "eyJraWQiOiJDZmwyT0tERCs0VHBcL05jcGJvMWxNcGNsRnhOM0RpWTh5MXFaZjhrQmE2TT0iLCJhbGciOiJSUzI1NiJ9.eyJhdF9oYXNoIjoiVlJmZWd1MG1La3hSOFAtbmRreUhYUSIsImN1c3RvbTpsZHNhY2NvdW50aWQiOiIzNjE4NTA2OTIzNDYxNzc3Iiwic3ViIjoiYzk2ZjBiZGEtYjk3Zi00NzE2LTgxODItNTIyNmQwZjI5Y2EwIiwiY29nbml0bzpncm91cHMiOlsidXMtd2VzdC0yX2Y0SFp2RHpwal9DaHVyY2gtQWNjb3VudC1PcGVuSUQiLCJ0YWxsLWFkbWluIl0sImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMi5hbWF6b25hd3MuY29tXC91cy13ZXN0LTJfZjRIWnZEenBqIiwiY29nbml0bzp1c2VybmFtZSI6ImNodXJjaC1hY2NvdW50LW9wZW5pZF8wMHUxd3hkZ2tvcG5keHUxYzM1NyIsImdpdmVuX25hbWUiOiJBbGVjIFJpY2hhcmQiLCJub25jZSI6Ii1TaHM5aXN6TlpvRzFWcjB4TkE0V1lYRWNqZWNNRVMwUURYTVVtLVBaeVE0S3QtN1Yxd0dYZk15MVkyeVV0NlJMcTYxbVR3MVpBQWYwNV9uanJUaUdyYkhUTVo1bUU3NUNST3BCcW9mbGpPZzVnZTJfbFZvZ2pLd0pnTVQ1akNneF95dW85Yk5nc1lfZ0hGMjZCWGktX0huWEVtZ3YyMjhpN0ZoenNuVnZVSSIsImF1ZCI6IjczZTJ0ZGphNWhpZHZkMnY5MWJwZmFsaG9wIiwiaWRlbnRpdGllcyI6W3sidXNlcklkIjoiMDB1MXd4ZGdrb3BORHhVMUMzNTciLCJwcm92aWRlck5hbWUiOiJDaHVyY2gtQWNjb3VudC1PcGVuSUQiLCJwcm92aWRlclR5cGUiOiJPSURDIiwiaXNzdWVyIjpudWxsLCJwcmltYXJ5IjoidHJ1ZSIsImRhdGVDcmVhdGVkIjoiMTY3Mzk3MTE0MDAxMCJ9XSwidG9rZW5fdXNlIjoiaWQiLCJhdXRoX3RpbWUiOjE3MjMxMzE0MDYsImV4cCI6MTcyMzEzNTAwNiwiaWF0IjoxNzIzMTMxNDA2LCJmYW1pbHlfbmFtZSI6IkxhcnNvbiIsImVtYWlsIjoiYWxhcnNvbnBpQGdtYWlsLmNvbSJ9.NjLS51l5VZDlMcGUt9BWlSVxHx7Quc8B1euCHL0-st3gT2oHplSdEVnB6DL5pdFjXi3sUbUj9jv6X-Z9NBqMB7KajFE7dSSQQjmSN5HOFJQ2vTmKp49tgCSEYAZRYWcxNzMS4LF8Od13Wc_qtS-ZeN_NHfvITNJlfp7L6AGki0JO59rT-DCtDUHF5i2pEAX86yIuJtMb4R6jbYD8chLWdmCFVoHHFKbvwgLwcSeJ1pAyE_yOL0AohsDMnw7heEnSUDAZgkSRBYTOrOJQwOA8snot1qmVlobZmWQ1AvULVg8dqt2LOZIkyEO9RvE-J5uNDDxpyo1rVdJjeBLMnHnuDA";
-        const endpointUrl = 'https://3ojfzhyjld.execute-api.us-east-2.amazonaws.com/prod/missions';
-
-        // Set to true if you want to modify the JSON (changing property names)
-        const shouldChangePropertyNames = false; 
-
-        /* If you set 'shouldChangePropertyNames' to true, these will be the changes.
-            Provide a list of 2 strings for each property you want to change, for example:
-            ["section", "scenarioGroup"] (will change 'section' attribute to 'scenarioGroup')
-            ["originalPropertyName", "modifiedPropertyName"]
-        */
-        const jsonPropertyNameChanges = [
-            [],
-            []
-        ];
-
-        /* If true, an [id] attribute will be added to the JSON. While going through the for loop,
-            the id will be set as the index of the loop. The id will be a string and will be named
-            [idName]
-        */
-        const shouldAddIndexAsId = false;
-        const indexShouldBeString = true;
-        const idName = "id";
+        const idToken = "";
+        const endpointUrl = '';
 
         try {
             const jsonDataFromFile = await fsExtra.readJson(jsonFilePath);
@@ -48,15 +24,11 @@ class SendJSONToApi {
             const startingIndex = 0;
             const endingIndex = jsonList.length;
             for(let i = startingIndex; i < endingIndex; i++) {
-                if(shouldChangePropertyNames) {
-                    JSONModificationService.changePropertyNames(jsonList[i], jsonPropertyNameChanges);
-                }
-                if(shouldAddIndexAsId) {
-                    JSONModificationService.addIdToJsonElement(jsonList[i], i, idName, indexShouldBeString);
-                }
-
-                const postResponse = await this.makePostRequest(jsonList[i], endpointUrl, idToken);
-                console.log("Response Retrieved", postResponse);
+                // Using timeouts to not overwhelm the API
+                setTimeout(async () => {
+                    const postResponse = await this.makePostRequest(jsonList[i], endpointUrl, idToken);
+                    console.log("Response Retrieved", postResponse);
+                }, 200)
             }
         } catch (error) {
             console.log(error);
