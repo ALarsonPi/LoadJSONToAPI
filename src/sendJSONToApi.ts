@@ -29,7 +29,7 @@ class SendJSONToApi {
                 console.log("Response Retrieved", postResponse);
                 
                 // Using timeouts to not overwhelm the API
-                await setTimeout(200);
+                await setTimeout(500);
             }
         } catch (error) {
             console.log(error);

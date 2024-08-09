@@ -38,13 +38,13 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var axios_1 = require("axios");
 var fsExtra = require("fs-extra");
+var promises_1 = require("timers/promises");
 var SendJSONToApi = /** @class */ (function () {
     function SendJSONToApi() {
     }
     SendJSONToApi.loadInJSONAndCallEndpoint = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var jsonFilePath, idToken, endpointUrl, jsonDataFromFile, jsonList_1, startingIndex, endingIndex, _loop_1, i, error_1;
-            var _this = this;
+            var jsonFilePath, idToken, endpointUrl, jsonDataFromFile, jsonList, startingIndex, endingIndex, i, postResponse, error_1;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
@@ -53,37 +53,36 @@ var SendJSONToApi = /** @class */ (function () {
                         endpointUrl = '';
                         _a.label = 1;
                     case 1:
-                        _a.trys.push([1, 3, , 4]);
+                        _a.trys.push([1, 8, , 9]);
                         return [4 /*yield*/, fsExtra.readJson(jsonFilePath)];
                     case 2:
                         jsonDataFromFile = _a.sent();
-                        jsonList_1 = (jsonDataFromFile.length === 1) ? [jsonDataFromFile] : jsonDataFromFile;
+                        jsonList = (jsonDataFromFile.length === 1) ? [jsonDataFromFile] : jsonDataFromFile;
                         startingIndex = 0;
-                        endingIndex = jsonList_1.length;
-                        _loop_1 = function (i) {
-                            // Using timeouts to not overwhelm the API
-                            setTimeout(function () { return __awaiter(_this, void 0, void 0, function () {
-                                var postResponse;
-                                return __generator(this, function (_a) {
-                                    switch (_a.label) {
-                                        case 0: return [4 /*yield*/, this.makePostRequest(jsonList_1[i], endpointUrl, idToken)];
-                                        case 1:
-                                            postResponse = _a.sent();
-                                            console.log("Response Retrieved", postResponse);
-                                            return [2 /*return*/];
-                                    }
-                                });
-                            }); }, 200);
-                        };
-                        for (i = startingIndex; i < endingIndex; i++) {
-                            _loop_1(i);
-                        }
-                        return [3 /*break*/, 4];
+                        endingIndex = jsonList.length;
+                        i = startingIndex;
+                        _a.label = 3;
                     case 3:
+                        if (!(i < endingIndex)) return [3 /*break*/, 7];
+                        return [4 /*yield*/, this.makePostRequest(jsonList[i], endpointUrl, idToken)];
+                    case 4:
+                        postResponse = _a.sent();
+                        console.log("Response Retrieved", postResponse);
+                        // Using timeouts to not overwhelm the API
+                        return [4 /*yield*/, (0, promises_1.setTimeout)(500)];
+                    case 5:
+                        // Using timeouts to not overwhelm the API
+                        _a.sent();
+                        _a.label = 6;
+                    case 6:
+                        i++;
+                        return [3 /*break*/, 3];
+                    case 7: return [3 /*break*/, 9];
+                    case 8:
                         error_1 = _a.sent();
                         console.log(error_1);
-                        return [3 /*break*/, 4];
-                    case 4: return [2 /*return*/];
+                        return [3 /*break*/, 9];
+                    case 9: return [2 /*return*/];
                 }
             });
         });
