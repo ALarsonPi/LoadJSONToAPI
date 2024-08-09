@@ -1,5 +1,6 @@
 import axios from 'axios';
 import * as fsExtra from 'fs-extra';
+import { setTimeout } from "timers/promises";
 
 class SendJSONToApi {
     static FILE_PREFIX = './src/json/';
@@ -24,11 +25,11 @@ class SendJSONToApi {
             const startingIndex = 0;
             const endingIndex = jsonList.length;
             for(let i = startingIndex; i < endingIndex; i++) {
+                const postResponse = await this.makePostRequest(jsonList[i], endpointUrl, idToken);
+                console.log("Response Retrieved", postResponse);
+                
                 // Using timeouts to not overwhelm the API
-                setTimeout(async () => {
-                    const postResponse = await this.makePostRequest(jsonList[i], endpointUrl, idToken);
-                    console.log("Response Retrieved", postResponse);
-                }, 200)
+                await setTimeout(200);
             }
         } catch (error) {
             console.log(error);
